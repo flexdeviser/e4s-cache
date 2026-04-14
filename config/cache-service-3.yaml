@@ -12,20 +12,7 @@ cache:
   chunkIntervalHours: 24         # Time interval per chunk in hours (1 day)
   maxMemoryBytes: 107374182400    # Maximum memory in bytes (100GB)
 
-# Redis configuration for distributed locking
+# Redis configuration for distributed locking and service discovery
 redis:
   host: localhost
-  port: 6379
-
-# Health monitoring configuration
-health:
-  checkIntervalMs: 30000           # Health check interval in milliseconds (5 seconds)
-
-# Peer services (other cache services in the cluster)
-peers:
-  - id: cache-service-1
-    host: localhost
-    port: 9090
-  - id: cache-service-2
-    host: localhost
-    port: 9091
+  port: 46379

@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-public class ServiceRegistry {
+public class ServiceRegistry implements IServiceRegistry {
     private static final Logger logger = LoggerFactory.getLogger(ServiceRegistry.class);
     
     private final Map<String, ServiceInstance> services = new ConcurrentHashMap<>();
@@ -124,5 +124,10 @@ public class ServiceRegistry {
         return (int) services.values().stream()
             .filter(s -> !s.isHealthChecked())
             .count();
+    }
+    
+    @Override
+    public ServiceInstance getLocalService() {
+        return null;
     }
 }

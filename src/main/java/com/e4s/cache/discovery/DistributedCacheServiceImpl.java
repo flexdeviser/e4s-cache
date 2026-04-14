@@ -21,7 +21,7 @@ public class DistributedCacheServiceImpl extends CacheServiceGrpc.CacheServiceIm
     private final ThreadSafeCompressedChunkManager chunkManager;
     private final DistributedLockManager lockManager;
     private final CacheBackEnd backEnd;
-    private final ServiceRegistry serviceRegistry;
+    private final IServiceRegistry serviceRegistry;
     private final ConsistentHashPartitioner partitioner;
     private final CacheServiceClientPool clientPool;
     private final ServiceInstance localService;
@@ -30,7 +30,7 @@ public class DistributedCacheServiceImpl extends CacheServiceGrpc.CacheServiceIm
     public DistributedCacheServiceImpl(ThreadSafeCompressedChunkManager chunkManager, 
                                        DistributedLockManager lockManager,
                                        CacheBackEnd backEnd,
-                                       ServiceRegistry serviceRegistry,
+                                       IServiceRegistry serviceRegistry,
                                        ConsistentHashPartitioner partitioner,
                                        CacheServiceClientPool clientPool,
                                        ServiceInstance localService) {
@@ -167,13 +167,11 @@ public class DistributedCacheServiceImpl extends CacheServiceGrpc.CacheServiceIm
                           StreamObserver<HealthCheckResponse> responseObserver) {
         int requestCount = this.requestCount.get();
         int serviceCount = serviceRegistry.getServiceCount();
-        int healthyServiceCount = serviceRegistry.getHealthyServiceCount();
-        int healthCheckedServiceCount = serviceRegistry.getHealthCheckedServiceCount();
         
         HealthCheckResponse response = HealthCheckResponse.newBuilder()
             .setHealthy(true)
-            .setStatus(String.format("UP - Requests: %d, Services: %d, Healthy: %d, Checked: %d", 
-                requestCount, serviceCount, healthyServiceCount, healthCheckedServiceCount))
+            .setStatus(String.format("UP - Requests: %d, Services: %d", 
+                requestCount, serviceCount))
             .build();
         
         responseObserver.onNext(response);
@@ -197,8 +195,6 @@ public class DistributedCacheServiceImpl extends CacheServiceGrpc.CacheServiceIm
         } catch (Exception e) {
             logger.warn("Failed to forward getSeries request to service: {}", 
                 targetService.getId());
-            
-            serviceRegistry.markServiceUnhealthy(targetService.getId());
             
             responseObserver.onNext(
                 GetSeriesResponse.newBuilder()
@@ -225,8 +221,6 @@ public class DistributedCacheServiceImpl extends CacheServiceGrpc.CacheServiceIm
         } catch (Exception e) {
             logger.warn("Failed to forward fillSeries request to service: {}", 
                 targetService.getId());
-            
-            serviceRegistry.markServiceUnhealthy(targetService.getId());
             
             responseObserver.onNext(
                 FillSeriesResponse.newBuilder()

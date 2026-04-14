@@ -12,13 +12,13 @@ import java.util.concurrent.Executors;
 public class DistributedChunkManager {
     private static final Logger logger = LoggerFactory.getLogger(DistributedChunkManager.class);
     
-    private final ServiceRegistry serviceRegistry;
+    private final IServiceRegistry serviceRegistry;
     private final ConsistentHashPartitioner partitioner;
     private final CacheServiceClientPool clientPool;
     private final ServiceInstance localService;
     private final ExecutorService executorService;
     
-    public DistributedChunkManager(ServiceRegistry serviceRegistry,
+    public DistributedChunkManager(IServiceRegistry serviceRegistry,
                                    ConsistentHashPartitioner partitioner,
                                    CacheServiceClientPool clientPool,
                                    ServiceInstance localService) {
@@ -67,7 +67,6 @@ public class DistributedChunkManager {
             } catch (Exception e) {
                 logger.warn("Failed to get data from service: {} for sensorId: {}", 
                     responsibleService.getId(), sensorId);
-                serviceRegistry.markServiceUnhealthy(responsibleService.getId());
                 return null;
             }
         }
@@ -113,7 +112,6 @@ public class DistributedChunkManager {
             } catch (Exception e) {
                 logger.warn("Failed to store data on service: {} for sensorId: {}", 
                     responsibleService.getId(), sensorId);
-                serviceRegistry.markServiceUnhealthy(responsibleService.getId());
             }
         } else {
             logger.debug("Local store for sensorId: {}", sensorId);
@@ -141,10 +139,6 @@ public class DistributedChunkManager {
     
     public int getServiceCount() {
         return serviceRegistry.getServiceCount();
-    }
-    
-    public int getHealthyServiceCount() {
-        return serviceRegistry.getHealthyServiceCount();
     }
     
     public void shutdown() {

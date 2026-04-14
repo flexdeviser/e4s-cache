@@ -115,6 +115,12 @@ public class ConsistentHashPartitioner {
         }
     }
     
+    public void updateServices(List<ServiceInstance> newServices) {
+        this.services.clear();
+        this.services.addAll(newServices);
+        rebuildRing();
+    }
+    
     public void rebuildRing() {
         NavigableMap<Integer, VirtualNode> newRing = new TreeMap<>();
         

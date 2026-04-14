@@ -126,6 +126,11 @@ public class CacheServiceClientPool {
         }
     }
     
+    public CacheServiceClient getOrCreateClient(ServiceInstance service) {
+        return clients.computeIfAbsent(service.getId(), id -> 
+            new CacheServiceClient(service.getHost(), service.getPort()));
+    }
+    
     public void shutdown() {
         for (CacheServiceClient client : clients.values()) {
             try {

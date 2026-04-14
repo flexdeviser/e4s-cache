@@ -45,7 +45,8 @@ public class CacheServiceClient {
         
         this.blockingStub = CacheServiceGrpc.newBlockingStub(channel);
         
-        logger.info("Created CacheServiceClient with connection listener for {}:{}", host, port);
+        logger.info("Created CacheServiceClient with connection listener for {}:{}, channel state: {}", 
+            host, port, channel.getState(false));
     }
     
     public GetSeriesResponse getSeries(String sensorId, long startTime, long endTime, 
@@ -103,7 +104,16 @@ public class CacheServiceClient {
         HealthCheckRequest request = HealthCheckRequest.newBuilder().build();
         
         try {
-            HealthCheckResponse response = blockingStub.healthCheck(request);
+            logger.debug("Making health check call to {}:{}, channel state: {}", 
+                host, port, channel.getState(false));
+            
+            // Use withWaitForReady() to wait for the channel to be ready
+            // Use withDeadlineAfter() to give the channel time to connect
+            HealthCheckResponse response = blockingStub
+                .withWaitForReady()
+                .withDeadlineAfter(5, TimeUnit.SECONDS)
+                .healthCheck(request);
+            
             logger.debug("healthCheck response for {}:{}, healthy: {}", 
                 host, port, response.getHealthy());
             return response;
@@ -115,7 +125,14 @@ public class CacheServiceClient {
                     .setStatus("offline")
                     .build();
             }
-            logger.error("Failed health check for {}:{}", host, port, e);
+            if (e.getStatus().getCode() == io.grpc.Status.Code.DEADLINE_EXCEEDED) {
+                logger.warn("Service {}:{} health check timed out", host, port);
+                return HealthCheckResponse.newBuilder()
+                    .setHealthy(false)
+                    .setStatus("timeout")
+                    .build();
+            }
+            logger.error("Failed health check for {}:{}, status: {}", host, port, e.getStatus(), e);
             return HealthCheckResponse.newBuilder()
                 .setHealthy(false)
                 .setStatus("error: " + e.getStatus().getCode().name())
@@ -127,6 +144,39 @@ public class CacheServiceClient {
                 .setStatus("error")
                 .build();
         }
+    }
+    
+    public boolean awaitReady(long timeout, TimeUnit unit) throws InterruptedException {
+        try {
+            logger.debug("Waiting for channel to {}:{} to be ready, current state: {}", 
+                host, port, channel.getState(false));
+            
+            long deadline = System.nanoTime() + unit.toNanos(timeout);
+            while (System.nanoTime() < deadline) {
+                io.grpc.ConnectivityState state = channel.getState(false);
+                if (state == io.grpc.ConnectivityState.READY) {
+                    logger.debug("Channel to {}:{} is ready", host, port);
+                    return true;
+                }
+                if (state == io.grpc.ConnectivityState.SHUTDOWN || 
+                    state == io.grpc.ConnectivityState.TRANSIENT_FAILURE) {
+                    logger.warn("Channel to {}:{} failed to connect, state: {}", host, port, state);
+                    return false;
+                }
+                Thread.sleep(100);
+            }
+            
+            logger.warn("Channel to {}:{} not ready after timeout, final state: {}", 
+                host, port, channel.getState(false));
+            return false;
+        } catch (Exception e) {
+            logger.error("Error waiting for channel to {}:{} to be ready", host, port, e);
+            return false;
+        }
+    }
+    
+    public io.grpc.ConnectivityState getState() {
+        return channel.getState(false);
     }
     
     public String getHost() {

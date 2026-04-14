@@ -15,9 +15,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 public class DistributedCacheServer {
@@ -27,17 +27,17 @@ public class DistributedCacheServer {
     private final ThreadSafeCompressedChunkManager chunkManager;
     private final DistributedLockManager lockManager;
     private final CacheBackEnd backEnd;
-    private final ServiceRegistry serviceRegistry;
+    private final RedisServiceRegistry serviceRegistry;
     private final ConsistentHashPartitioner partitioner;
     private final CacheServiceClientPool clientPool;
     private final ServiceInstance localService;
-    private final HealthMonitor healthMonitor;
     private final DistributedChunkManager distributedChunkManager;
+    private final ScheduledExecutorService serviceDiscoveryScheduler;
+    private volatile boolean running = false;
     
     public DistributedCacheServer(CacheServiceConfig config) {
         CacheServiceConfig.CacheConfig cacheConfig = config.getCache();
         CacheServiceConfig.RedisConfig redisConfig = config.getRedis();
-        CacheServiceConfig.HealthConfig healthConfig = config.getHealth();
         
         this.chunkManager = new ThreadSafeCompressedChunkManager(
             cacheConfig.getMaxChunks(), 
@@ -52,25 +52,19 @@ public class DistributedCacheServer {
             config.getServiceGroup(), 
             config.getHost(), 
             config.getPort());
-        this.serviceRegistry = new ServiceRegistry();
         
-        serviceRegistry.registerService(localService);
+        // Use Redis-based service registry
+        this.serviceRegistry = new RedisServiceRegistry(
+            localService, 
+            redisConfig.getHost(), 
+            redisConfig.getPort());
         
-        for (CacheServiceConfig.PeerConfig peerConfig : config.getPeers()) {
-            ServiceInstance peer = new ServiceInstance(
-                peerConfig.getId(), 
-                config.getServiceGroup(), 
-                peerConfig.getHost(), 
-                peerConfig.getPort());
-            serviceRegistry.registerService(peer);
-        }
-        
+        // Get initial list of services from Redis
         List<ServiceInstance> allServices = serviceRegistry.getAllServices();
         this.partitioner = new ConsistentHashPartitioner(allServices);
-        this.clientPool = new CacheServiceClientPool(allServices, serviceRegistry.getEventListener());
-        this.healthMonitor = new HealthMonitor(serviceRegistry, clientPool, healthConfig.getCheckIntervalMs());
+        this.clientPool = new CacheServiceClientPool(allServices);
         
-        serviceRegistry.setHealthMonitor(healthMonitor);
+        this.serviceDiscoveryScheduler = Executors.newSingleThreadScheduledExecutor();
         
         this.distributedChunkManager = new DistributedChunkManager(
             serviceRegistry, partitioner, clientPool, localService);
@@ -83,9 +77,8 @@ public class DistributedCacheServer {
             .addService(serviceImpl)
             .build();
         
-        logger.info("Created DistributedCacheServer: {}@{}:{} with {} peer services", 
-            config.getServiceId(), config.getHost(), config.getPort(), config.getPeers().size());
-        logger.info("Event-driven health monitoring enabled");
+        logger.info("Created DistributedCacheServer: {}@{}:{} with Redis-based service discovery", 
+            config.getServiceId(), config.getHost(), config.getPort());
     }
     
     private redis.clients.jedis.JedisPool createJedisPool(String host, int port) {
@@ -95,30 +88,19 @@ public class DistributedCacheServer {
     public void start() throws IOException {
         server.start();
         
-        localService.setHealthy(true);
+        // Start Redis service registry
+        serviceRegistry.start();
         
-        serviceRegistry.getEventListener().start();
+        running = true;
         
-        healthMonitor.start();
+        // Schedule periodic service discovery updates
+        serviceDiscoveryScheduler.scheduleAtFixedRate(
+            this::updateServiceDiscovery, 
+            5, 5, TimeUnit.SECONDS);
         
         logger.info("Distributed Cache Server started, listening on port {}", server.getPort());
         logger.info("Service ID: {}, Group: {}", localService.getId(), localService.getGroup());
-        logger.info("Total services: {}, Health checked: {}, Healthy: {}, Unknown: {}", 
-            serviceRegistry.getServiceCount(),
-            serviceRegistry.getHealthCheckedServiceCount(),
-            serviceRegistry.getHealthyServiceCount(),
-            serviceRegistry.getUnknownHealthServiceCount());
-        
-        logger.info("Event-driven health monitoring enabled - making initial RPC calls for two-way validation");
-        
-        // Make initial RPC calls to trigger connection state events (two-way validation)
-        for (ServiceInstance service : serviceRegistry.getAllServices()) {
-            if (!service.getId().equals(localService.getId())) {
-                makeInitialRpcCall(service);
-            }
-        }
-        
-        logger.info("Two-way validation: Each service will detect all other services through initial RPC calls");
+        logger.info("Redis-based service discovery enabled");
         
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             logger.info("Shutting down distributed cache server due to JVM shutdown");
@@ -126,38 +108,56 @@ public class DistributedCacheServer {
         }));
     }
     
-    private void makeInitialRpcCall(ServiceInstance service) {
-        CompletableFuture.runAsync(() -> {
-            try {
-                // Wait for gRPC channel to initialize
-                Thread.sleep(500); // 500ms delay for gRPC channel initialization
+    private void updateServiceDiscovery() {
+        if (!running) {
+            return;
+        }
+        
+        try {
+            List<ServiceInstance> currentServices = serviceRegistry.getAllServices();
+            int previousCount = partitioner.getServiceCount();
+            
+            // Update partitioner if services changed
+            if (currentServices.size() != previousCount) {
+                logger.info("Service count changed: {} -> {}, updating partitioner", 
+                    previousCount, currentServices.size());
                 
-                logger.info("→ Making initial RPC call to service: {} (two-way validation)", service.getId());
-                var response = clientPool.healthCheck(service);
+                partitioner.updateServices(currentServices);
                 
-                if (response.getHealthy()) {
-                    logger.info("✓ Initial RPC call successful to service: {} (two-way validation complete)", service.getId());
-                } else {
-                    logger.warn("✗ Initial RPC call failed to service: {}, reason: {} (will retry)", 
-                        service.getId(), response.getStatus());
+                // Update client pool with new services
+                for (ServiceInstance service : currentServices) {
+                    if (!service.getId().equals(localService.getId())) {
+                        clientPool.getOrCreateClient(service);
+                    }
                 }
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-                logger.debug("Initial RPC call interrupted for service: {}", service.getId());
-            } catch (Exception e) {
-                logger.warn("✗ Initial RPC call failed to service: {}, will be detected by connection events (two-way validation)", 
-                    service.getId());
+                
+                logger.info("Updated service discovery: {} services available", currentServices.size());
             }
-        });
+        } catch (Exception e) {
+            logger.error("Failed to update service discovery", e);
+        }
     }
     
     public void stop() {
         logger.info("Stopping distributed cache server...");
         
-        serviceRegistry.getEventListener().stop();
+        running = false;
         
-        healthMonitor.stop();
+        // Stop service discovery scheduler
+        serviceDiscoveryScheduler.shutdown();
+        try {
+            if (!serviceDiscoveryScheduler.awaitTermination(5, TimeUnit.SECONDS)) {
+                serviceDiscoveryScheduler.shutdownNow();
+            }
+        } catch (InterruptedException e) {
+            serviceDiscoveryScheduler.shutdownNow();
+            Thread.currentThread().interrupt();
+        }
         
+        // Stop Redis service registry
+        serviceRegistry.stop();
+        
+        // Stop gRPC server
         if (server != null && !server.isTerminated()) {
             try {
                 server.shutdown();
@@ -191,7 +191,7 @@ public class DistributedCacheServer {
         return chunkManager;
     }
     
-    public ServiceRegistry getServiceRegistry() {
+    public RedisServiceRegistry getServiceRegistry() {
         return serviceRegistry;
     }
     
@@ -205,10 +205,6 @@ public class DistributedCacheServer {
     
     public int getServiceCount() {
         return serviceRegistry.getServiceCount();
-    }
-    
-    public int getHealthyServiceCount() {
-        return serviceRegistry.getHealthyServiceCount();
     }
     
     public static void main(String[] args) {
