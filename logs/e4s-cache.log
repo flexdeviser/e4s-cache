@@ -3167,3 +3167,124 @@ Caused by: java.net.ConnectException: Connection refused
 2026-04-14 15:51:53.849 [main] INFO  c.e.c.server.DistributedCacheServer - Two-way validation: Each service will detect all other services through initial RPC calls
 2026-04-14 15:51:53.849 [ForkJoinPool.commonPool-worker-1] INFO  c.e.c.server.DistributedCacheServer - → Making initial RPC call to service: cache-service-1 (two-way validation)
 2026-04-14 15:51:53.849 [ForkJoinPool.commonPool-worker-2] INFO  c.e.c.server.DistributedCacheServer - → Making initial RPC call to service: cache-service-3 (two-way validation)
+2026-04-14 15:53:06.629 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Shutting down distributed cache server due to JVM shutdown
+2026-04-14 15:53:06.630 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Stopping distributed cache server...
+2026-04-14 15:53:06.630 [Thread-0] INFO  c.e4s.cache.discovery.HealthMonitor - Stopped HealthMonitor
+2026-04-14 15:53:06.637 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - gRPC server stopped
+2026-04-14 15:53:06.637 [Thread-0] INFO  c.e.c.d.DistributedChunkManager - Shutdown DistributedChunkManager
+2026-04-14 15:53:08.022 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Shutting down distributed cache server due to JVM shutdown
+2026-04-14 15:53:08.022 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Stopping distributed cache server...
+2026-04-14 15:53:08.022 [Thread-0] INFO  c.e4s.cache.discovery.HealthMonitor - Stopped HealthMonitor
+2026-04-14 15:53:08.026 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - gRPC server stopped
+2026-04-14 15:53:08.026 [Thread-0] INFO  c.e.c.d.DistributedChunkManager - Shutdown DistributedChunkManager
+2026-04-14 15:53:08.027 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9090
+2026-04-14 15:53:10.034 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Shutting down distributed cache server due to JVM shutdown
+2026-04-14 15:53:10.034 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Stopping distributed cache server...
+2026-04-14 15:53:10.035 [Thread-0] INFO  c.e4s.cache.discovery.HealthMonitor - Stopped HealthMonitor
+2026-04-14 15:53:10.037 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - gRPC server stopped
+2026-04-14 15:53:10.037 [Thread-0] INFO  c.e.c.d.DistributedChunkManager - Shutdown DistributedChunkManager
+2026-04-14 15:57:15.180 [main] INFO  com.e4s.cache.config.ConfigLoader - Loading configuration from: /Users/eric.w/Workspace/e4s/ai/open-code/e4s-cahce/config/cache-service-3.yaml
+2026-04-14 15:57:15.230 [main] INFO  com.e4s.cache.config.ConfigLoader - Configuration loaded successfully
+2026-04-14 15:57:15.294 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-3 in group: e4s-cache
+2026-04-14 15:57:15.294 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-1 in group: e4s-cache
+2026-04-14 15:57:15.294 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-2 in group: e4s-cache
+2026-04-14 15:57:15.295 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:57:15.398 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient with connection listener for localhost:9090
+2026-04-14 15:57:15.399 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient with connection listener for localhost:9091
+2026-04-14 15:57:15.399 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient with connection listener for localhost:9092
+2026-04-14 15:57:15.399 [main] INFO  c.e.c.d.CacheServiceClientPool - Created client pool for 3 services with event listeners
+2026-04-14 15:57:15.401 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Created HealthMonitor with check interval: 30000ms, max retries: 3, event-driven: true
+2026-04-14 15:57:15.401 [main] INFO  c.e.c.d.DistributedChunkManager - Created DistributedChunkManager for service: cache-service-3
+2026-04-14 15:57:15.402 [main] INFO  c.e.c.d.DistributedCacheServiceImpl - Created DistributedCacheServiceImpl for service: cache-service-3
+2026-04-14 15:57:15.424 [main] INFO  c.e.c.server.DistributedCacheServer - Created DistributedCacheServer: cache-service-3@localhost:9092 with 2 peer services
+2026-04-14 15:57:15.424 [main] INFO  c.e.c.server.DistributedCacheServer - Event-driven health monitoring enabled
+2026-04-14 15:57:15.481 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Event-driven health monitoring enabled, periodic checks disabled
+2026-04-14 15:57:15.482 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Started HealthMonitor
+2026-04-14 15:57:15.482 [main] INFO  c.e.c.server.DistributedCacheServer - Distributed Cache Server started, listening on port 9092
+2026-04-14 15:57:15.482 [main] INFO  c.e.c.server.DistributedCacheServer - Service ID: cache-service-3, Group: e4s-cache
+2026-04-14 15:57:15.483 [main] INFO  c.e.c.server.DistributedCacheServer - Total services: 3, Health checked: 1, Healthy: 1, Unknown: 2
+2026-04-14 15:57:15.483 [main] INFO  c.e.c.server.DistributedCacheServer - Event-driven health monitoring enabled - making initial RPC calls for two-way validation
+2026-04-14 15:57:15.487 [main] INFO  c.e.c.server.DistributedCacheServer - Two-way validation: Each service will detect all other services through initial RPC calls
+2026-04-14 15:57:15.987 [ForkJoinPool.commonPool-worker-2] INFO  c.e.c.server.DistributedCacheServer - → Making initial RPC call to service: cache-service-2 (two-way validation)
+2026-04-14 15:57:15.988 [ForkJoinPool.commonPool-worker-1] INFO  c.e.c.server.DistributedCacheServer - → Making initial RPC call to service: cache-service-1 (two-way validation)
+2026-04-14 15:57:16.071 [ForkJoinPool.commonPool-worker-2] WARN  c.e.c.discovery.CacheServiceClient - Service localhost:9091 is offline - connection refused
+2026-04-14 15:57:16.071 [ForkJoinPool.commonPool-worker-1] WARN  c.e.c.discovery.CacheServiceClient - Service localhost:9090 is offline - connection refused
+2026-04-14 15:57:16.073 [ForkJoinPool.commonPool-worker-2] WARN  c.e.c.server.DistributedCacheServer - ✗ Initial RPC call failed to service: cache-service-2, reason: offline (will retry)
+2026-04-14 15:57:16.073 [ForkJoinPool.commonPool-worker-1] WARN  c.e.c.server.DistributedCacheServer - ✗ Initial RPC call failed to service: cache-service-1, reason: offline (will retry)
+2026-04-14 15:57:19.418 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:57:19.421 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:57:19.422 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:57:19.422 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Added service service-4 to hash ring
+2026-04-14 15:57:19.422 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:57:19.422 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:57:19.423 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:57:19.423 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Removed service service-2 from hash ring
+2026-04-14 15:57:19.423 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:57:19.423 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Removed service service-2 from hash ring
+2026-04-14 15:57:19.424 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Rebuilt hash ring with 200 virtual nodes
+2026-04-14 15:57:19.424 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:57:19.424 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:57:19.425 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:57:19.428 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:57:19.428 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:57:19.428 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:57:19.429 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:57:19.429 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:57:19.429 [main] INFO  c.e.cache.discovery.ServiceRegistry - Unregistered service: service-1
+2026-04-14 15:57:19.429 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:57:19.429 [main] WARN  c.e.cache.discovery.ServiceRegistry - Marked service as unhealthy: service-1
+2026-04-14 15:57:19.429 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:57:19.430 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:57:19.430 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:57:19.430 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:57:19.430 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:57:19.430 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:57:19.430 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:57:19.430 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:57:19.430 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:57:19.431 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:57:19.431 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:57:19.431 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:57:19.431 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:57:19.431 [main] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: service-1
+2026-04-14 15:57:19.431 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:57:20.462 [main] INFO  com.e4s.cache.config.ConfigLoader - Loading configuration from: /Users/eric.w/Workspace/e4s/ai/open-code/e4s-cahce/config/cache-service-1.yaml
+2026-04-14 15:57:20.509 [main] INFO  com.e4s.cache.config.ConfigLoader - Configuration loaded successfully
+2026-04-14 15:57:20.568 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-1 in group: e4s-cache
+2026-04-14 15:57:20.568 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-2 in group: e4s-cache
+2026-04-14 15:57:20.568 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-3 in group: e4s-cache
+2026-04-14 15:57:20.569 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:57:20.665 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient with connection listener for localhost:9090
+2026-04-14 15:57:20.665 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient with connection listener for localhost:9091
+2026-04-14 15:57:20.666 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient with connection listener for localhost:9092
+2026-04-14 15:57:20.666 [main] INFO  c.e.c.d.CacheServiceClientPool - Created client pool for 3 services with event listeners
+2026-04-14 15:57:20.667 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Created HealthMonitor with check interval: 30000ms, max retries: 3, event-driven: true
+2026-04-14 15:57:20.667 [main] INFO  c.e.c.d.DistributedChunkManager - Created DistributedChunkManager for service: cache-service-1
+2026-04-14 15:57:20.668 [main] INFO  c.e.c.d.DistributedCacheServiceImpl - Created DistributedCacheServiceImpl for service: cache-service-1
+2026-04-14 15:57:20.692 [main] INFO  c.e.c.server.DistributedCacheServer - Created DistributedCacheServer: cache-service-1@localhost:9090 with 2 peer services
+2026-04-14 15:57:20.692 [main] INFO  c.e.c.server.DistributedCacheServer - Event-driven health monitoring enabled
+2026-04-14 15:57:20.759 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Event-driven health monitoring enabled, periodic checks disabled
+2026-04-14 15:57:20.759 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Started HealthMonitor
+2026-04-14 15:57:20.759 [main] INFO  c.e.c.server.DistributedCacheServer - Distributed Cache Server started, listening on port 9090
+2026-04-14 15:57:20.759 [main] INFO  c.e.c.server.DistributedCacheServer - Service ID: cache-service-1, Group: e4s-cache
+2026-04-14 15:57:20.760 [main] INFO  c.e.c.server.DistributedCacheServer - Total services: 3, Health checked: 1, Healthy: 1, Unknown: 2
+2026-04-14 15:57:20.761 [main] INFO  c.e.c.server.DistributedCacheServer - Event-driven health monitoring enabled - making initial RPC calls for two-way validation
+2026-04-14 15:57:20.764 [main] INFO  c.e.c.server.DistributedCacheServer - Two-way validation: Each service will detect all other services through initial RPC calls
+2026-04-14 15:57:21.270 [ForkJoinPool.commonPool-worker-2] INFO  c.e.c.server.DistributedCacheServer - → Making initial RPC call to service: cache-service-3 (two-way validation)
+2026-04-14 15:57:21.270 [ForkJoinPool.commonPool-worker-1] INFO  c.e.c.server.DistributedCacheServer - → Making initial RPC call to service: cache-service-2 (two-way validation)
+2026-04-14 15:57:21.311 [ForkJoinPool.commonPool-worker-1] WARN  c.e.c.discovery.CacheServiceClient - Service localhost:9091 is offline - connection refused
+2026-04-14 15:57:21.312 [ForkJoinPool.commonPool-worker-1] WARN  c.e.c.server.DistributedCacheServer - ✗ Initial RPC call failed to service: cache-service-2, reason: offline (will retry)
+2026-04-14 15:57:49.526 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Shutting down distributed cache server due to JVM shutdown
+2026-04-14 15:57:49.526 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Stopping distributed cache server...
+2026-04-14 15:57:49.526 [Thread-0] INFO  c.e4s.cache.discovery.HealthMonitor - Stopped HealthMonitor
+2026-04-14 15:57:49.532 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - gRPC server stopped
+2026-04-14 15:57:49.532 [Thread-0] INFO  c.e.c.d.DistributedChunkManager - Shutdown DistributedChunkManager
+2026-04-14 15:57:49.533 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9090
+2026-04-14 15:57:51.169 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Shutting down distributed cache server due to JVM shutdown
+2026-04-14 15:57:51.169 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Stopping distributed cache server...
+2026-04-14 15:57:51.169 [Thread-0] INFO  c.e4s.cache.discovery.HealthMonitor - Stopped HealthMonitor
+2026-04-14 15:57:54.100 [ForkJoinPool.commonPool-worker-2] WARN  c.e.c.discovery.CacheServiceClient - Service localhost:9092 is offline - connection refused
+2026-04-14 15:57:54.100 [ForkJoinPool.commonPool-worker-2] WARN  c.e.c.server.DistributedCacheServer - ✗ Initial RPC call failed to service: cache-service-3, reason: offline (will retry)
+2026-04-14 15:57:54.537 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9091
+2026-04-14 15:57:59.542 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9092
+2026-04-14 15:57:59.544 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Distributed cache server stopped

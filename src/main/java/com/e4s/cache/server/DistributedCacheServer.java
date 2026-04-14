@@ -129,6 +129,9 @@ public class DistributedCacheServer {
     private void makeInitialRpcCall(ServiceInstance service) {
         CompletableFuture.runAsync(() -> {
             try {
+                // Wait for gRPC channel to initialize
+                Thread.sleep(500); // 500ms delay for gRPC channel initialization
+                
                 logger.info("→ Making initial RPC call to service: {} (two-way validation)", service.getId());
                 var response = clientPool.healthCheck(service);
                 
@@ -138,6 +141,9 @@ public class DistributedCacheServer {
                     logger.warn("✗ Initial RPC call failed to service: {}, reason: {} (will retry)", 
                         service.getId(), response.getStatus());
                 }
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                logger.debug("Initial RPC call interrupted for service: {}", service.getId());
             } catch (Exception e) {
                 logger.warn("✗ Initial RPC call failed to service: {}, will be detected by connection events (two-way validation)", 
                     service.getId());
