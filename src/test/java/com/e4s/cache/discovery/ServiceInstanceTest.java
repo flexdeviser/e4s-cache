@@ -13,20 +13,24 @@ public class ServiceInstanceTest {
         assertEquals("group-1", instance.getGroup());
         assertEquals("localhost", instance.getHost());
         assertEquals(9090, instance.getPort());
-        assertTrue(instance.isHealthy());
+        assertFalse(instance.isHealthy());
+        assertFalse(instance.isHealthChecked());
     }
     
     @Test
     public void testSetHealthy() {
         ServiceInstance instance = new ServiceInstance("service-1", "group-1", "localhost", 9090);
         
-        assertTrue(instance.isHealthy());
+        assertFalse(instance.isHealthy());
+        assertFalse(instance.isHealthChecked());
         
         instance.setHealthy(false);
         assertFalse(instance.isHealthy());
+        assertTrue(instance.isHealthChecked());
         
         instance.setHealthy(true);
         assertTrue(instance.isHealthy());
+        assertTrue(instance.isHealthChecked());
     }
     
     @Test

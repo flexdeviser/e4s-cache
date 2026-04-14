@@ -168,11 +168,12 @@ public class DistributedCacheServiceImpl extends CacheServiceGrpc.CacheServiceIm
         int requestCount = this.requestCount.get();
         int serviceCount = serviceRegistry.getServiceCount();
         int healthyServiceCount = serviceRegistry.getHealthyServiceCount();
+        int healthCheckedServiceCount = serviceRegistry.getHealthCheckedServiceCount();
         
         HealthCheckResponse response = HealthCheckResponse.newBuilder()
             .setHealthy(true)
-            .setStatus(String.format("UP - Requests: %d, Services: %d, Healthy: %d", 
-                requestCount, serviceCount, healthyServiceCount))
+            .setStatus(String.format("UP - Requests: %d, Services: %d, Healthy: %d, Checked: %d", 
+                requestCount, serviceCount, healthyServiceCount, healthCheckedServiceCount))
             .build();
         
         responseObserver.onNext(response);

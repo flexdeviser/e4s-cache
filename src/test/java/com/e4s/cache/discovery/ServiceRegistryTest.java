@@ -86,24 +86,25 @@ public class ServiceRegistryTest {
         registry.registerService(service2);
         registry.registerService(service3);
         
+        service1.setHealthy(true);
         service2.setHealthy(false);
         
         List<ServiceInstance> healthyServices = registry.getHealthyServices();
         
-        assertEquals(2, healthyServices.size());
+        assertEquals(1, healthyServices.size());
         assertTrue(healthyServices.contains(service1));
         assertFalse(healthyServices.contains(service2));
-        assertTrue(healthyServices.contains(service3));
+        assertFalse(healthyServices.contains(service3));
     }
     
     @Test
     public void testMarkServiceUnhealthy() {
         registry.registerService(service1);
+        service1.setHealthy(true);
         
         assertTrue(service1.isHealthy());
         
         registry.markServiceUnhealthy("service-1");
-        
         assertFalse(service1.isHealthy());
     }
     
@@ -125,10 +126,11 @@ public class ServiceRegistryTest {
         registry.registerService(service2);
         registry.registerService(service3);
         
-        assertEquals(3, registry.getHealthyServiceCount());
+        assertEquals(0, registry.getHealthyServiceCount());
         
+        service1.setHealthy(true);
         service2.setHealthy(false);
         
-        assertEquals(2, registry.getHealthyServiceCount());
+        assertEquals(1, registry.getHealthyServiceCount());
     }
 }

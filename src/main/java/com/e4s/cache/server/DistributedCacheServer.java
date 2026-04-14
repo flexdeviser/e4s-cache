@@ -89,12 +89,18 @@ public class DistributedCacheServer {
     
     public void start() throws IOException {
         server.start();
+        
+        localService.setHealthy(true);
+        
         healthMonitor.start();
         
         logger.info("Distributed Cache Server started, listening on port {}", server.getPort());
         logger.info("Service ID: {}, Group: {}", localService.getId(), localService.getGroup());
-        logger.info("Total services: {}, Healthy services: {}", 
-            serviceRegistry.getServiceCount(), serviceRegistry.getHealthyServiceCount());
+        logger.info("Total services: {}, Health checked: {}, Healthy: {}, Unknown: {}", 
+            serviceRegistry.getServiceCount(),
+            serviceRegistry.getHealthCheckedServiceCount(),
+            serviceRegistry.getHealthyServiceCount(),
+            serviceRegistry.getUnknownHealthServiceCount());
         
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             logger.info("Shutting down distributed cache server due to JVM shutdown");

@@ -8,6 +8,7 @@ public class ServiceInstance {
     private final String host;
     private final int port;
     private volatile boolean healthy;
+    private volatile boolean healthChecked;
     private volatile long lastHealthCheck;
     
     public ServiceInstance(String id, String group, String host, int port) {
@@ -15,8 +16,9 @@ public class ServiceInstance {
         this.group = group;
         this.host = host;
         this.port = port;
-        this.healthy = true;
-        this.lastHealthCheck = System.currentTimeMillis();
+        this.healthy = false;
+        this.healthChecked = false;
+        this.lastHealthCheck = 0;
     }
     
     public String getId() {
@@ -41,7 +43,12 @@ public class ServiceInstance {
     
     public void setHealthy(boolean healthy) {
         this.healthy = healthy;
+        this.healthChecked = true;
         this.lastHealthCheck = System.currentTimeMillis();
+    }
+    
+    public boolean isHealthChecked() {
+        return healthChecked;
     }
     
     public long getLastHealthCheck() {

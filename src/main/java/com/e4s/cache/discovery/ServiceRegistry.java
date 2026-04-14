@@ -80,4 +80,16 @@ public class ServiceRegistry {
             .filter(ServiceInstance::isHealthy)
             .count();
     }
+    
+    public int getHealthCheckedServiceCount() {
+        return (int) services.values().stream()
+            .filter(ServiceInstance::isHealthChecked)
+            .count();
+    }
+    
+    public int getUnknownHealthServiceCount() {
+        return (int) services.values().stream()
+            .filter(s -> !s.isHealthChecked())
+            .count();
+    }
 }

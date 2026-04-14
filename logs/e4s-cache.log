@@ -1791,3 +1791,252 @@ Caused by: java.net.ConnectException: Connection refused
 2026-04-14 15:06:14.487 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9091
 2026-04-14 15:06:14.487 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9092
 2026-04-14 15:06:14.488 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Distributed cache server stopped
+2026-04-14 15:09:52.411 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:09:52.415 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:09:52.415 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:09:52.415 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Added service service-4 to hash ring
+2026-04-14 15:09:52.416 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:09:52.416 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:09:52.416 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:09:52.416 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Removed service service-2 from hash ring
+2026-04-14 15:09:52.417 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:09:52.417 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Removed service service-2 from hash ring
+2026-04-14 15:09:52.417 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Rebuilt hash ring with 200 virtual nodes
+2026-04-14 15:09:52.417 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:09:52.418 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:09:52.418 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:09:52.421 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:09:52.421 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:09:52.421 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:09:52.422 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:09:52.422 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:09:52.422 [main] INFO  c.e.cache.discovery.ServiceRegistry - Unregistered service: service-1
+2026-04-14 15:09:52.422 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:09:52.426 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:09:52.426 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:09:52.426 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:09:52.426 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:09:52.427 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:09:52.427 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:09:52.427 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:09:52.427 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:09:52.427 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:09:52.427 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:09:52.427 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:09:52.428 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:09:52.428 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:09:52.428 [main] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: service-1
+2026-04-14 15:09:52.428 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:11:00.919 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:11:00.923 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:11:00.923 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:11:00.923 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Added service service-4 to hash ring
+2026-04-14 15:11:00.924 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:11:00.924 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:11:00.924 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:11:00.924 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Removed service service-2 from hash ring
+2026-04-14 15:11:00.925 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:11:00.925 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Removed service service-2 from hash ring
+2026-04-14 15:11:00.925 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Rebuilt hash ring with 200 virtual nodes
+2026-04-14 15:11:00.925 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:11:00.926 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:11:00.926 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:11:00.929 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:11:00.929 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:11:00.929 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:11:00.930 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:11:00.930 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:11:00.930 [main] INFO  c.e.cache.discovery.ServiceRegistry - Unregistered service: service-1
+2026-04-14 15:11:00.930 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:11:00.930 [main] WARN  c.e.cache.discovery.ServiceRegistry - Marked service as unhealthy: service-1
+2026-04-14 15:11:00.930 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:11:00.931 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:11:00.931 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:11:00.931 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:11:00.931 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:11:00.931 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:11:00.932 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:11:00.932 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:11:00.932 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:11:00.932 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:11:00.932 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:11:00.932 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:11:00.932 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:11:00.932 [main] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: service-1
+2026-04-14 15:11:00.933 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:11:15.540 [main] INFO  com.e4s.cache.config.ConfigLoader - Loading configuration from: /Users/eric.w/Workspace/e4s/ai/open-code/e4s-cahce/config/cache-service-3.yaml
+2026-04-14 15:11:15.584 [main] INFO  com.e4s.cache.config.ConfigLoader - Configuration loaded successfully
+2026-04-14 15:11:15.647 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-3 in group: e4s-cache
+2026-04-14 15:11:15.647 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-1 in group: e4s-cache
+2026-04-14 15:11:15.647 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-2 in group: e4s-cache
+2026-04-14 15:11:15.648 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:11:15.743 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9090
+2026-04-14 15:11:15.744 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9091
+2026-04-14 15:11:15.744 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9092
+2026-04-14 15:11:15.744 [main] INFO  c.e.c.d.CacheServiceClientPool - Created client pool for 3 services
+2026-04-14 15:11:15.745 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Created HealthMonitor with check interval: 5000ms
+2026-04-14 15:11:15.745 [main] INFO  c.e.c.d.DistributedChunkManager - Created DistributedChunkManager for service: cache-service-3
+2026-04-14 15:11:15.746 [main] INFO  c.e.c.d.DistributedCacheServiceImpl - Created DistributedCacheServiceImpl for service: cache-service-3
+2026-04-14 15:11:15.768 [main] INFO  c.e.c.server.DistributedCacheServer - Created DistributedCacheServer: cache-service-3@localhost:9092 with 2 peer services
+2026-04-14 15:11:15.823 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Started HealthMonitor
+2026-04-14 15:11:15.824 [main] INFO  c.e.c.server.DistributedCacheServer - Distributed Cache Server started, listening on port 9092
+2026-04-14 15:11:15.824 [main] INFO  c.e.c.server.DistributedCacheServer - Service ID: cache-service-3, Group: e4s-cache
+2026-04-14 15:11:15.826 [main] INFO  c.e.c.server.DistributedCacheServer - Total services: 3, Health checked: 1, Healthy: 1, Unknown: 2
+2026-04-14 15:11:20.826 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:11:20.889 [health-monitor] WARN  c.e.c.discovery.CacheServiceClient - Service unavailable at localhost:9090 - connection refused
+2026-04-14 15:11:20.892 [health-monitor] WARN  c.e.c.discovery.CacheServiceClient - Service unavailable at localhost:9091 - connection refused
+2026-04-14 15:11:20.940 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:11:20.940 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/3
+2026-04-14 15:11:25.796 [main] INFO  com.e4s.cache.config.ConfigLoader - Loading configuration from: /Users/eric.w/Workspace/e4s/ai/open-code/e4s-cahce/config/cache-service-1.yaml
+2026-04-14 15:11:25.823 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:11:25.824 [health-monitor] WARN  c.e.c.discovery.CacheServiceClient - Service unavailable at localhost:9090 - connection refused
+2026-04-14 15:11:25.824 [health-monitor] WARN  c.e.c.discovery.CacheServiceClient - Service unavailable at localhost:9091 - connection refused
+2026-04-14 15:11:25.827 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:11:25.828 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/3
+2026-04-14 15:11:25.846 [main] INFO  com.e4s.cache.config.ConfigLoader - Configuration loaded successfully
+2026-04-14 15:11:25.913 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-1 in group: e4s-cache
+2026-04-14 15:11:25.914 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-2 in group: e4s-cache
+2026-04-14 15:11:25.914 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-3 in group: e4s-cache
+2026-04-14 15:11:25.915 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:11:26.016 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9090
+2026-04-14 15:11:26.017 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9091
+2026-04-14 15:11:26.017 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9092
+2026-04-14 15:11:26.017 [main] INFO  c.e.c.d.CacheServiceClientPool - Created client pool for 3 services
+2026-04-14 15:11:26.018 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Created HealthMonitor with check interval: 5000ms
+2026-04-14 15:11:26.018 [main] INFO  c.e.c.d.DistributedChunkManager - Created DistributedChunkManager for service: cache-service-1
+2026-04-14 15:11:26.019 [main] INFO  c.e.c.d.DistributedCacheServiceImpl - Created DistributedCacheServiceImpl for service: cache-service-1
+2026-04-14 15:11:26.042 [main] INFO  c.e.c.server.DistributedCacheServer - Created DistributedCacheServer: cache-service-1@localhost:9090 with 2 peer services
+2026-04-14 15:11:26.100 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Started HealthMonitor
+2026-04-14 15:11:26.100 [main] INFO  c.e.c.server.DistributedCacheServer - Distributed Cache Server started, listening on port 9090
+2026-04-14 15:11:26.100 [main] INFO  c.e.c.server.DistributedCacheServer - Service ID: cache-service-1, Group: e4s-cache
+2026-04-14 15:11:26.101 [main] INFO  c.e.c.server.DistributedCacheServer - Total services: 3, Health checked: 1, Healthy: 1, Unknown: 2
+2026-04-14 15:11:27.601 [main] INFO  com.e4s.cache.config.ConfigLoader - Loading configuration from: /Users/eric.w/Workspace/e4s/ai/open-code/e4s-cahce/config/cache-service-2.yaml
+2026-04-14 15:11:27.650 [main] INFO  com.e4s.cache.config.ConfigLoader - Configuration loaded successfully
+2026-04-14 15:11:27.714 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-2 in group: e4s-cache
+2026-04-14 15:11:27.715 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-1 in group: e4s-cache
+2026-04-14 15:11:27.715 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-3 in group: e4s-cache
+2026-04-14 15:11:27.715 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:11:27.812 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9090
+2026-04-14 15:11:27.812 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9091
+2026-04-14 15:11:27.812 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9092
+2026-04-14 15:11:27.812 [main] INFO  c.e.c.d.CacheServiceClientPool - Created client pool for 3 services
+2026-04-14 15:11:27.813 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Created HealthMonitor with check interval: 5000ms
+2026-04-14 15:11:27.814 [main] INFO  c.e.c.d.DistributedChunkManager - Created DistributedChunkManager for service: cache-service-2
+2026-04-14 15:11:27.814 [main] INFO  c.e.c.d.DistributedCacheServiceImpl - Created DistributedCacheServiceImpl for service: cache-service-2
+2026-04-14 15:11:27.838 [main] INFO  c.e.c.server.DistributedCacheServer - Created DistributedCacheServer: cache-service-2@localhost:9091 with 2 peer services
+2026-04-14 15:11:27.897 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Started HealthMonitor
+2026-04-14 15:11:27.897 [main] INFO  c.e.c.server.DistributedCacheServer - Distributed Cache Server started, listening on port 9091
+2026-04-14 15:11:27.897 [main] INFO  c.e.c.server.DistributedCacheServer - Service ID: cache-service-2, Group: e4s-cache
+2026-04-14 15:11:27.900 [main] INFO  c.e.c.server.DistributedCacheServer - Total services: 3, Health checked: 1, Healthy: 1, Unknown: 2
+2026-04-14 15:11:30.823 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:11:30.860 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:11:30.860 [health-monitor] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: cache-service-1
+2026-04-14 15:11:30.860 [health-monitor] INFO  c.e4s.cache.discovery.HealthMonitor - Service cache-service-1 recovered and is now healthy
+2026-04-14 15:11:30.896 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:11:30.896 [health-monitor] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: cache-service-2
+2026-04-14 15:11:30.896 [health-monitor] INFO  c.e4s.cache.discovery.HealthMonitor - Service cache-service-2 recovered and is now healthy
+2026-04-14 15:11:30.898 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:11:30.898 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:11:31.105 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:11:31.135 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:11:31.141 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:11:31.141 [health-monitor] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: cache-service-2
+2026-04-14 15:11:31.141 [health-monitor] INFO  c.e4s.cache.discovery.HealthMonitor - Service cache-service-2 recovered and is now healthy
+2026-04-14 15:11:31.147 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:11:31.147 [health-monitor] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: cache-service-3
+2026-04-14 15:11:31.147 [health-monitor] INFO  c.e4s.cache.discovery.HealthMonitor - Service cache-service-3 recovered and is now healthy
+2026-04-14 15:11:31.147 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:11:32.902 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:11:32.934 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:11:32.934 [health-monitor] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: cache-service-1
+2026-04-14 15:11:32.934 [health-monitor] INFO  c.e4s.cache.discovery.HealthMonitor - Service cache-service-1 recovered and is now healthy
+2026-04-14 15:11:32.939 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:11:32.944 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:11:32.944 [health-monitor] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: cache-service-3
+2026-04-14 15:11:32.944 [health-monitor] INFO  c.e4s.cache.discovery.HealthMonitor - Service cache-service-3 recovered and is now healthy
+2026-04-14 15:11:32.944 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:11:35.825 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:11:35.828 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:11:35.830 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:11:35.832 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:11:35.832 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:11:36.101 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:11:36.104 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:11:36.106 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:11:36.108 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:11:36.108 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:11:37.901 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:11:37.903 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:11:37.905 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:11:37.907 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:11:37.907 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:11:40.827 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:11:40.830 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:11:40.832 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:11:40.834 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:11:40.834 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:11:41.100 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:11:41.102 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:11:41.103 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:11:41.105 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:11:41.105 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:11:42.902 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:11:42.904 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:11:42.905 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:11:42.907 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:11:42.907 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:11:45.828 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:11:45.830 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:11:45.832 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:11:45.833 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:11:45.833 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:11:46.105 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:11:46.107 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:11:46.109 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:11:46.111 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:11:46.111 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:11:47.901 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:11:47.904 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:11:47.906 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:11:47.908 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:11:47.908 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:11:50.823 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:11:50.825 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:11:50.828 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:11:50.829 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:11:50.829 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:11:51.101 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:11:51.103 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:11:51.105 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:11:51.107 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:11:51.107 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:11:52.897 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:11:52.899 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:11:52.900 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:11:52.902 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:11:52.902 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:11:55.826 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:11:55.829 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:11:55.831 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:11:55.833 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:11:55.833 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:11:56.100 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:11:56.102 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:11:56.104 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:11:56.105 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:11:56.106 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:11:57.900 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:11:57.903 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:11:57.904 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:11:57.906 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:11:57.906 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:12:00.825 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:12:00.827 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:12:00.829 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:12:00.831 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:12:00.831 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:12:01.104 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:12:01.106 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:12:01.108 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:12:01.110 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:12:01.110 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
