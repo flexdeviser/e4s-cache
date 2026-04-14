@@ -101,19 +101,6 @@ public class HealthMonitor {
         }
     }
     
-    public void checkServiceImmediately(ServiceInstance service) {
-        if (!running) {
-            logger.debug("Health monitor not running, skipping immediate check for service: {}", service.getId());
-            return;
-        }
-        
-        logger.debug("Performing immediate health check for new service: {}", service.getId());
-        
-        CompletableFuture.runAsync(() -> {
-            checkServiceHealth(service);
-        }, scheduler);
-    }
-    
     private void checkServiceHealth(ServiceInstance service) {
         try {
             var response = clientPool.healthCheck(service);
@@ -150,22 +137,32 @@ public class HealthMonitor {
                 }
             }
             
-        } catch (Exception e) {
-            int failures = service.incrementConsecutiveFailures();
-            
-            if (failures >= MAX_RETRY_COUNT) {
-                if (service.isHealthy()) {
-                    serviceRegistry.markServiceUnhealthy(service.getId());
-                    logger.warn("Service {} marked as unhealthy after {} failures: disconnected", 
-                        service.getId(), failures);
-                } else {
-                    logger.debug("Service {} still unhealthy ({} failures): disconnected", 
-                        service.getId(), failures);
-                }
-            } else {
-                logger.debug("Service {} health check failed ({}/{}): disconnected", 
-                    service.getId(), failures, MAX_RETRY_COUNT);
+        } catch (java.lang.IllegalStateException e) {
+            if (e.getMessage() != null && e.getMessage().contains("Not started")) {
+                logger.debug("Service {} gRPC channel not ready yet, will retry on next check", service.getId());
+                return;
             }
+            handleHealthCheckException(service, e);
+        } catch (Exception e) {
+            handleHealthCheckException(service, e);
+        }
+    }
+    
+    private void handleHealthCheckException(ServiceInstance service, Exception e) {
+        int failures = service.incrementConsecutiveFailures();
+        
+        if (failures >= MAX_RETRY_COUNT) {
+            if (service.isHealthy()) {
+                serviceRegistry.markServiceUnhealthy(service.getId());
+                logger.warn("Service {} marked as unhealthy after {} failures: disconnected", 
+                    service.getId(), failures);
+            } else {
+                logger.debug("Service {} still unhealthy ({} failures): disconnected", 
+                    service.getId(), failures);
+            }
+        } else {
+            logger.debug("Service {} health check failed ({}/{}): disconnected", 
+                service.getId(), failures, MAX_RETRY_COUNT);
         }
     }
     

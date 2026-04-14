@@ -53,9 +53,7 @@ public class ServiceRegistry {
         
         logger.info("Registered service: {} in group: {}", service.getId(), service.getGroup());
         
-        if (healthMonitor != null) {
-            healthMonitor.checkServiceImmediately(service);
-        }
+        // Event listener will handle health detection automatically when connections are established
     }
     
     public void unregisterService(String serviceId) {

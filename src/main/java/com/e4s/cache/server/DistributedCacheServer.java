@@ -108,12 +108,7 @@ public class DistributedCacheServer {
             serviceRegistry.getHealthyServiceCount(),
             serviceRegistry.getUnknownHealthServiceCount());
         
-        logger.info("Performing immediate health checks for all services...");
-        for (ServiceInstance service : serviceRegistry.getAllServices()) {
-            if (!service.getId().equals(localService.getId())) {
-                healthMonitor.checkServiceImmediately(service);
-            }
-        }
+        logger.info("Event-driven health monitoring enabled - services will be detected automatically");
         
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             logger.info("Shutting down distributed cache server due to JVM shutdown");
