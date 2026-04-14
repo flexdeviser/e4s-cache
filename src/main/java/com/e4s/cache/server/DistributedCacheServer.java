@@ -96,6 +96,8 @@ public class DistributedCacheServer {
         
         localService.setHealthy(true);
         
+        serviceRegistry.getEventListener().start();
+        
         healthMonitor.start();
         
         logger.info("Distributed Cache Server started, listening on port {}", server.getPort());
@@ -121,6 +123,8 @@ public class DistributedCacheServer {
     
     public void stop() {
         logger.info("Stopping distributed cache server...");
+        
+        serviceRegistry.getEventListener().stop();
         
         healthMonitor.stop();
         

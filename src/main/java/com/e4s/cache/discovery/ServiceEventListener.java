@@ -2,10 +2,24 @@ package com.e4s.cache.discovery;
 
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class ServiceEventListener {
     private final List<ServiceLifecycleListener> lifecycleListeners = new CopyOnWriteArrayList<>();
     private final List<ServiceHealthListener> healthListeners = new CopyOnWriteArrayList<>();
+    private final AtomicBoolean started = new AtomicBoolean(false);
+    
+    public void start() {
+        started.set(true);
+    }
+    
+    public void stop() {
+        started.set(false);
+    }
+    
+    public boolean isStarted() {
+        return started.get();
+    }
     
     public void addLifecycleListener(ServiceLifecycleListener listener) {
         lifecycleListeners.add(listener);
@@ -24,6 +38,10 @@ public class ServiceEventListener {
     }
     
     public void fireServiceRegistered(ServiceInstance service) {
+        if (!started.get()) {
+            return;
+        }
+        
         for (ServiceLifecycleListener listener : lifecycleListeners) {
             try {
                 listener.onServiceRegistered(service);
@@ -34,6 +52,10 @@ public class ServiceEventListener {
     }
     
     public void fireServiceUnregistered(ServiceInstance service) {
+        if (!started.get()) {
+            return;
+        }
+        
         for (ServiceLifecycleListener listener : lifecycleListeners) {
             try {
                 listener.onServiceUnregistered(service);
@@ -44,6 +66,10 @@ public class ServiceEventListener {
     }
     
     public void fireServiceHealthChanged(ServiceInstance service, boolean healthy, String reason) {
+        if (!started.get()) {
+            return;
+        }
+        
         for (ServiceHealthListener listener : healthListeners) {
             try {
                 listener.onServiceHealthChanged(service, healthy, reason);
