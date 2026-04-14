@@ -19,6 +19,7 @@ public class HealthMonitor {
     private final ScheduledExecutorService scheduler;
     private final long checkIntervalMs;
     private volatile boolean running = false;
+    private volatile boolean eventDrivenEnabled = true;
     
     public HealthMonitor(ServiceRegistry serviceRegistry, 
                         CacheServiceClientPool clientPool,
@@ -32,8 +33,13 @@ public class HealthMonitor {
             return thread;
         });
         
-        logger.info("Created HealthMonitor with check interval: {}ms, max retries: {}", 
-            checkIntervalMs, MAX_RETRY_COUNT);
+        logger.info("Created HealthMonitor with check interval: {}ms, max retries: {}, event-driven: {}", 
+            checkIntervalMs, MAX_RETRY_COUNT, eventDrivenEnabled);
+    }
+    
+    public void setEventDrivenEnabled(boolean enabled) {
+        this.eventDrivenEnabled = enabled;
+        logger.info("Event-driven health monitoring: {}", enabled);
     }
     
     public void start() {
@@ -43,8 +49,14 @@ public class HealthMonitor {
         }
         
         running = true;
-        scheduler.scheduleAtFixedRate(this::performHealthChecks, 
-            checkIntervalMs, checkIntervalMs, TimeUnit.MILLISECONDS);
+        
+        if (!eventDrivenEnabled) {
+            scheduler.scheduleAtFixedRate(this::performHealthChecks, 
+                checkIntervalMs, checkIntervalMs, TimeUnit.MILLISECONDS);
+            logger.info("Started periodic health monitoring with interval: {}ms", checkIntervalMs);
+        } else {
+            logger.info("Event-driven health monitoring enabled, periodic checks disabled");
+        }
         
         logger.info("Started HealthMonitor");
     }

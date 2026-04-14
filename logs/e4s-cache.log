@@ -2378,3 +2378,166 @@ Caused by: java.net.ConnectException: Connection refused
 2026-04-14 15:20:36.857 [health-monitor] INFO  c.e4s.cache.discovery.HealthMonitor - Service cache-service-1 recovered and is now healthy
 2026-04-14 15:20:36.863 [health-monitor] WARN  c.e.c.discovery.CacheServiceClient - Service localhost:9091 is offline - connection refused
 2026-04-14 15:20:36.863 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Service cache-service-2 health check failed (1/3): disconnected
+2026-04-14 15:21:03.184 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:21:03.198 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:21:03.198 [health-monitor] WARN  c.e.c.discovery.CacheServiceClient - Service localhost:9091 is offline - connection refused
+2026-04-14 15:21:03.198 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Service cache-service-2 health check failed (2/3): disconnected
+2026-04-14 15:21:03.208 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:21:03.209 [health-monitor] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: cache-service-3
+2026-04-14 15:21:03.209 [health-monitor] INFO  c.e4s.cache.discovery.HealthMonitor - Service cache-service-3 recovered and is now healthy
+2026-04-14 15:21:03.209 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 2/3
+2026-04-14 15:21:06.722 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:21:06.725 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:21:06.726 [health-monitor] WARN  c.e.c.discovery.CacheServiceClient - Service localhost:9091 is offline - connection refused
+2026-04-14 15:21:06.726 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Service cache-service-2 health check failed (2/3): disconnected
+2026-04-14 15:21:06.731 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:21:06.731 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 2/3
+2026-04-14 15:21:07.057 [main] INFO  com.e4s.cache.config.ConfigLoader - Loading configuration from: /Users/eric.w/Workspace/e4s/ai/open-code/e4s-cahce/config/cache-service-2.yaml
+2026-04-14 15:21:07.101 [main] INFO  com.e4s.cache.config.ConfigLoader - Configuration loaded successfully
+2026-04-14 15:21:07.165 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-2 in group: e4s-cache
+2026-04-14 15:21:07.165 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-1 in group: e4s-cache
+2026-04-14 15:21:07.166 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-3 in group: e4s-cache
+2026-04-14 15:21:07.166 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:21:07.264 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9090
+2026-04-14 15:21:07.265 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9091
+2026-04-14 15:21:07.265 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9092
+2026-04-14 15:21:07.265 [main] INFO  c.e.c.d.CacheServiceClientPool - Created client pool for 3 services
+2026-04-14 15:21:07.266 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Created HealthMonitor with check interval: 30000ms, max retries: 3
+2026-04-14 15:21:07.266 [main] INFO  c.e.c.d.DistributedChunkManager - Created DistributedChunkManager for service: cache-service-2
+2026-04-14 15:21:07.267 [main] INFO  c.e.c.d.DistributedCacheServiceImpl - Created DistributedCacheServiceImpl for service: cache-service-2
+2026-04-14 15:21:07.289 [main] INFO  c.e.c.server.DistributedCacheServer - Created DistributedCacheServer: cache-service-2@localhost:9091 with 2 peer services
+2026-04-14 15:21:07.347 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Started HealthMonitor
+2026-04-14 15:21:07.347 [main] INFO  c.e.c.server.DistributedCacheServer - Distributed Cache Server started, listening on port 9091
+2026-04-14 15:21:07.347 [main] INFO  c.e.c.server.DistributedCacheServer - Service ID: cache-service-2, Group: e4s-cache
+2026-04-14 15:21:07.350 [main] INFO  c.e.c.server.DistributedCacheServer - Total services: 3, Health checked: 1, Healthy: 1, Unknown: 2
+2026-04-14 15:21:07.350 [main] INFO  c.e.c.server.DistributedCacheServer - Performing immediate health checks for all services...
+2026-04-14 15:21:07.350 [main] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing immediate health check for new service: cache-service-1
+2026-04-14 15:21:07.353 [main] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing immediate health check for new service: cache-service-3
+2026-04-14 15:21:07.455 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:21:07.455 [health-monitor] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: cache-service-1
+2026-04-14 15:21:07.455 [health-monitor] INFO  c.e4s.cache.discovery.HealthMonitor - Service cache-service-1 recovered and is now healthy
+2026-04-14 15:21:07.463 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:21:07.463 [health-monitor] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: cache-service-3
+2026-04-14 15:21:07.463 [health-monitor] INFO  c.e4s.cache.discovery.HealthMonitor - Service cache-service-3 recovered and is now healthy
+2026-04-14 15:21:33.184 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:21:33.188 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:21:33.199 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:21:33.199 [health-monitor] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: cache-service-2
+2026-04-14 15:21:33.199 [health-monitor] INFO  c.e4s.cache.discovery.HealthMonitor - Service cache-service-2 recovered and is now healthy
+2026-04-14 15:21:33.201 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:21:33.201 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:21:36.723 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:21:36.726 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:21:36.728 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:21:36.729 [health-monitor] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: cache-service-2
+2026-04-14 15:21:36.729 [health-monitor] INFO  c.e4s.cache.discovery.HealthMonitor - Service cache-service-2 recovered and is now healthy
+2026-04-14 15:21:36.731 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:21:36.731 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:21:37.347 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:21:37.350 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:21:37.354 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:21:37.357 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 15:21:37.357 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:21:55.315 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Shutting down distributed cache server due to JVM shutdown
+2026-04-14 15:21:55.315 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Stopping distributed cache server...
+2026-04-14 15:21:55.315 [Thread-0] INFO  c.e4s.cache.discovery.HealthMonitor - Stopped HealthMonitor
+2026-04-14 15:21:55.321 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - gRPC server stopped
+2026-04-14 15:21:55.321 [Thread-0] INFO  c.e.c.d.DistributedChunkManager - Shutdown DistributedChunkManager
+2026-04-14 15:21:55.323 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9090
+2026-04-14 15:21:55.323 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9091
+2026-04-14 15:21:55.323 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9092
+2026-04-14 15:21:55.324 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Distributed cache server stopped
+2026-04-14 15:22:03.181 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:22:03.183 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:22:03.186 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:22:03.188 [health-monitor] WARN  c.e.c.discovery.CacheServiceClient - Service localhost:9092 is offline - connection refused
+2026-04-14 15:22:03.188 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Service cache-service-3 health check failed (1/3): disconnected
+2026-04-14 15:22:03.188 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:22:07.347 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 15:22:07.350 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 15:22:07.352 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 15:22:07.357 [health-monitor] WARN  c.e.c.discovery.CacheServiceClient - Service localhost:9092 is offline - connection refused
+2026-04-14 15:22:07.357 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Service cache-service-3 health check failed (1/3): disconnected
+2026-04-14 15:22:07.358 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 15:22:09.393 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Shutting down distributed cache server due to JVM shutdown
+2026-04-14 15:22:09.393 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Stopping distributed cache server...
+2026-04-14 15:22:09.393 [Thread-0] INFO  c.e4s.cache.discovery.HealthMonitor - Stopped HealthMonitor
+2026-04-14 15:22:09.397 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - gRPC server stopped
+2026-04-14 15:22:09.397 [Thread-0] INFO  c.e.c.d.DistributedChunkManager - Shutdown DistributedChunkManager
+2026-04-14 15:22:09.398 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9090
+2026-04-14 15:22:09.399 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9091
+2026-04-14 15:22:09.399 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9092
+2026-04-14 15:22:09.400 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Distributed cache server stopped
+2026-04-14 15:22:11.338 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Shutting down distributed cache server due to JVM shutdown
+2026-04-14 15:22:11.339 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Stopping distributed cache server...
+2026-04-14 15:22:11.339 [Thread-0] INFO  c.e4s.cache.discovery.HealthMonitor - Stopped HealthMonitor
+2026-04-14 15:22:11.342 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - gRPC server stopped
+2026-04-14 15:22:11.342 [Thread-0] INFO  c.e.c.d.DistributedChunkManager - Shutdown DistributedChunkManager
+2026-04-14 15:22:11.343 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9090
+2026-04-14 15:22:11.343 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9091
+2026-04-14 15:22:11.343 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9092
+2026-04-14 15:22:11.344 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Distributed cache server stopped
+2026-04-14 15:26:08.430 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:26:08.434 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:26:08.434 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:26:08.434 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Added service service-4 to hash ring
+2026-04-14 15:26:08.434 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:26:08.435 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:26:08.435 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:26:08.435 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Removed service service-2 from hash ring
+2026-04-14 15:26:08.436 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:26:08.436 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Removed service service-2 from hash ring
+2026-04-14 15:26:08.436 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Rebuilt hash ring with 200 virtual nodes
+2026-04-14 15:26:08.436 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:26:08.437 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:26:08.437 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:26:08.440 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:26:08.440 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:26:08.440 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:26:08.441 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:26:08.442 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:26:08.442 [main] INFO  c.e.cache.discovery.ServiceRegistry - Unregistered service: service-1
+2026-04-14 15:26:08.442 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:26:08.442 [main] WARN  c.e.cache.discovery.ServiceRegistry - Marked service as unhealthy: service-1
+2026-04-14 15:26:08.442 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:26:08.442 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:26:08.443 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:26:08.443 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:26:08.443 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:26:08.443 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:26:08.443 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:26:08.444 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:26:08.444 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:26:08.444 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:26:08.444 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:26:08.444 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:26:08.444 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:26:08.444 [main] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: service-1
+2026-04-14 15:26:08.445 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:26:17.899 [main] INFO  com.e4s.cache.config.ConfigLoader - Loading configuration from: /Users/eric.w/Workspace/e4s/ai/open-code/e4s-cahce/config/cache-service-1.yaml
+2026-04-14 15:26:17.945 [main] INFO  com.e4s.cache.config.ConfigLoader - Configuration loaded successfully
+2026-04-14 15:26:18.007 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-1 in group: e4s-cache
+2026-04-14 15:26:18.007 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-2 in group: e4s-cache
+2026-04-14 15:26:18.007 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-3 in group: e4s-cache
+2026-04-14 15:26:18.008 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:26:18.110 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient with connection listener for localhost:9090
+2026-04-14 15:26:18.111 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient with connection listener for localhost:9091
+2026-04-14 15:26:18.111 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient with connection listener for localhost:9092
+2026-04-14 15:26:18.111 [main] INFO  c.e.c.d.CacheServiceClientPool - Created client pool for 3 services with event listeners
+2026-04-14 15:26:18.112 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Created HealthMonitor with check interval: 30000ms, max retries: 3, event-driven: true
+2026-04-14 15:26:18.113 [main] INFO  c.e.c.d.DistributedChunkManager - Created DistributedChunkManager for service: cache-service-1
+2026-04-14 15:26:18.113 [main] INFO  c.e.c.d.DistributedCacheServiceImpl - Created DistributedCacheServiceImpl for service: cache-service-1
+2026-04-14 15:26:18.135 [main] INFO  c.e.c.server.DistributedCacheServer - Created DistributedCacheServer: cache-service-1@localhost:9090 with 2 peer services
+2026-04-14 15:26:18.136 [main] INFO  c.e.c.server.DistributedCacheServer - Event-driven health monitoring enabled
+2026-04-14 15:26:18.190 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Event-driven health monitoring enabled, periodic checks disabled
+2026-04-14 15:26:18.190 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Started HealthMonitor
+2026-04-14 15:26:18.190 [main] INFO  c.e.c.server.DistributedCacheServer - Distributed Cache Server started, listening on port 9090
+2026-04-14 15:26:18.190 [main] INFO  c.e.c.server.DistributedCacheServer - Service ID: cache-service-1, Group: e4s-cache
+2026-04-14 15:26:18.191 [main] INFO  c.e.c.server.DistributedCacheServer - Total services: 3, Health checked: 1, Healthy: 1, Unknown: 2
+2026-04-14 15:26:18.192 [main] INFO  c.e.c.server.DistributedCacheServer - Performing immediate health checks for all services...
+2026-04-14 15:26:18.192 [main] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing immediate health check for new service: cache-service-2
+2026-04-14 15:26:18.196 [main] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing immediate health check for new service: cache-service-3
+2026-04-14 15:26:18.265 [health-monitor] WARN  c.e.c.discovery.CacheServiceClient - Service localhost:9091 is offline - connection refused
+2026-04-14 15:26:18.267 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Service cache-service-2 health check failed (1/3): disconnected
+2026-04-14 15:26:18.270 [health-monitor] WARN  c.e.c.discovery.CacheServiceClient - Service localhost:9092 is offline - connection refused
+2026-04-14 15:26:18.270 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Service cache-service-3 health check failed (1/3): disconnected

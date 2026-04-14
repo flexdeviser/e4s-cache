@@ -15,6 +15,32 @@ public class ServiceRegistry {
     private final Map<String, ServiceInstance> services = new ConcurrentHashMap<>();
     private final Map<String, List<ServiceInstance>> serviceGroups = new ConcurrentHashMap<>();
     private volatile HealthMonitor healthMonitor;
+    private final ServiceEventListener eventListener;
+    
+    public ServiceRegistry() {
+        this.eventListener = new ServiceEventListener();
+        setupEventListeners();
+    }
+    
+    private void setupEventListeners() {
+        eventListener.addHealthListener((service, healthy, reason) -> {
+            if (healthy) {
+                if (!service.isHealthy()) {
+                    service.setHealthy(true);
+                    logger.info("Service {} health changed to healthy: {}", service.getId(), reason);
+                }
+            } else {
+                if (service.isHealthy()) {
+                    service.setHealthy(false);
+                    logger.warn("Service {} health changed to unhealthy: {}", service.getId(), reason);
+                }
+            }
+        });
+    }
+    
+    public ServiceEventListener getEventListener() {
+        return eventListener;
+    }
     
     public void setHealthMonitor(HealthMonitor healthMonitor) {
         this.healthMonitor = healthMonitor;

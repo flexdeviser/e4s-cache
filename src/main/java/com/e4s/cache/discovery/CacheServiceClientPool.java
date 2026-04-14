@@ -18,17 +18,32 @@ public class CacheServiceClientPool {
     
     private final Map<String, CacheServiceClient> clients = new ConcurrentHashMap<>();
     private final Map<String, ServiceInstance> serviceMap;
+    private final ServiceEventListener eventListener;
     
     public CacheServiceClientPool(List<ServiceInstance> services) {
         this.serviceMap = services.stream()
             .collect(Collectors.toMap(ServiceInstance::getId, s -> s));
+        this.eventListener = new ServiceEventListener();
         
         for (ServiceInstance service : services) {
             clients.computeIfAbsent(service.getId(), id -> 
-                new CacheServiceClient(service.getHost(), service.getPort()));
+                new CacheServiceClient(service.getHost(), service.getPort(), eventListener));
         }
         
-        logger.info("Created client pool for {} services", services.size());
+        logger.info("Created client pool for {} services with event listeners", services.size());
+    }
+    
+    public CacheServiceClientPool(List<ServiceInstance> services, ServiceEventListener eventListener) {
+        this.serviceMap = services.stream()
+            .collect(Collectors.toMap(ServiceInstance::getId, s -> s));
+        this.eventListener = eventListener;
+        
+        for (ServiceInstance service : services) {
+            clients.computeIfAbsent(service.getId(), id -> 
+                new CacheServiceClient(service.getHost(), service.getPort(), eventListener));
+        }
+        
+        logger.info("Created client pool for {} services with event listeners", services.size());
     }
     
     public CacheServiceClient getClient(ServiceInstance service) {

@@ -66,7 +66,7 @@ public class DistributedCacheServer {
         
         List<ServiceInstance> allServices = serviceRegistry.getAllServices();
         this.partitioner = new ConsistentHashPartitioner(allServices);
-        this.clientPool = new CacheServiceClientPool(allServices);
+        this.clientPool = new CacheServiceClientPool(allServices, serviceRegistry.getEventListener());
         this.healthMonitor = new HealthMonitor(serviceRegistry, clientPool, healthConfig.getCheckIntervalMs());
         
         serviceRegistry.setHealthMonitor(healthMonitor);
@@ -84,6 +84,7 @@ public class DistributedCacheServer {
         
         logger.info("Created DistributedCacheServer: {}@{}:{} with {} peer services", 
             config.getServiceId(), config.getHost(), config.getPort(), config.getPeers().size());
+        logger.info("Event-driven health monitoring enabled");
     }
     
     private redis.clients.jedis.JedisPool createJedisPool(String host, int port) {

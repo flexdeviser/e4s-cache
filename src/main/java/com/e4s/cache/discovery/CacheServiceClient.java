@@ -16,10 +16,13 @@ public class CacheServiceClient {
     private final CacheServiceGrpc.CacheServiceBlockingStub blockingStub;
     private final String host;
     private final int port;
+    private final ServiceInstance service;
+    private volatile boolean connected = false;
     
     public CacheServiceClient(String host, int port) {
         this.host = host;
         this.port = port;
+        this.service = new ServiceInstance("client-" + host + ":" + port, "client", host, port);
         
         this.channel = ManagedChannelBuilder.forAddress(host, port)
             .usePlaintext()
@@ -28,6 +31,21 @@ public class CacheServiceClient {
         this.blockingStub = CacheServiceGrpc.newBlockingStub(channel);
         
         logger.info("Created CacheServiceClient for {}:{}", host, port);
+    }
+    
+    public CacheServiceClient(String host, int port, ServiceEventListener eventListener) {
+        this.host = host;
+        this.port = port;
+        this.service = new ServiceInstance("client-" + host + ":" + port, "client", host, port);
+        
+        this.channel = ManagedChannelBuilder.forAddress(host, port)
+            .usePlaintext()
+            .intercept(new ConnectionStateListener(service, eventListener))
+            .build();
+        
+        this.blockingStub = CacheServiceGrpc.newBlockingStub(channel);
+        
+        logger.info("Created CacheServiceClient with connection listener for {}:{}", host, port);
     }
     
     public GetSeriesResponse getSeries(String sensorId, long startTime, long endTime, 
