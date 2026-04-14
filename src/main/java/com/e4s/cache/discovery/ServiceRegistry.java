@@ -14,6 +14,11 @@ public class ServiceRegistry {
     
     private final Map<String, ServiceInstance> services = new ConcurrentHashMap<>();
     private final Map<String, List<ServiceInstance>> serviceGroups = new ConcurrentHashMap<>();
+    private volatile HealthMonitor healthMonitor;
+    
+    public void setHealthMonitor(HealthMonitor healthMonitor) {
+        this.healthMonitor = healthMonitor;
+    }
     
     public void registerService(ServiceInstance service) {
         services.put(service.getId(), service);
@@ -21,6 +26,10 @@ public class ServiceRegistry {
         serviceGroups.computeIfAbsent(service.getGroup(), k -> new CopyOnWriteArrayList<>()).add(service);
         
         logger.info("Registered service: {} in group: {}", service.getId(), service.getGroup());
+        
+        if (healthMonitor != null) {
+            healthMonitor.checkServiceImmediately(service);
+        }
     }
     
     public void unregisterService(String serviceId) {

@@ -68,6 +68,9 @@ public class DistributedCacheServer {
         this.partitioner = new ConsistentHashPartitioner(allServices);
         this.clientPool = new CacheServiceClientPool(allServices);
         this.healthMonitor = new HealthMonitor(serviceRegistry, clientPool, healthConfig.getCheckIntervalMs());
+        
+        serviceRegistry.setHealthMonitor(healthMonitor);
+        
         this.distributedChunkManager = new DistributedChunkManager(
             serviceRegistry, partitioner, clientPool, localService);
         
@@ -101,6 +104,13 @@ public class DistributedCacheServer {
             serviceRegistry.getHealthCheckedServiceCount(),
             serviceRegistry.getHealthyServiceCount(),
             serviceRegistry.getUnknownHealthServiceCount());
+        
+        logger.info("Performing immediate health checks for all services...");
+        for (ServiceInstance service : serviceRegistry.getAllServices()) {
+            if (!service.getId().equals(localService.getId())) {
+                healthMonitor.checkServiceImmediately(service);
+            }
+        }
         
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             logger.info("Shutting down distributed cache server due to JVM shutdown");

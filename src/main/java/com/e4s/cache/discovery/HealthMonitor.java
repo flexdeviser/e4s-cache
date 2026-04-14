@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -86,6 +87,19 @@ public class HealthMonitor {
         } catch (Exception e) {
             logger.error("Error during health checks", e);
         }
+    }
+    
+    public void checkServiceImmediately(ServiceInstance service) {
+        if (!running) {
+            logger.debug("Health monitor not running, skipping immediate check for service: {}", service.getId());
+            return;
+        }
+        
+        logger.debug("Performing immediate health check for new service: {}", service.getId());
+        
+        CompletableFuture.runAsync(() -> {
+            checkServiceHealth(service);
+        }, scheduler);
     }
     
     private void checkServiceHealth(ServiceInstance service) {
