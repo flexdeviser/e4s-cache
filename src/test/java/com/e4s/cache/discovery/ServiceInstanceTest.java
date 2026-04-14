@@ -69,4 +69,32 @@ public class ServiceInstanceTest {
         assertTrue(str.contains("localhost"));
         assertTrue(str.contains("9090"));
     }
+    
+    @Test
+    public void testConsecutiveFailures() {
+        ServiceInstance instance = new ServiceInstance("service-1", "group-1", "localhost", 9090);
+        
+        assertEquals(0, instance.getConsecutiveFailures());
+        
+        instance.incrementConsecutiveFailures();
+        assertEquals(1, instance.getConsecutiveFailures());
+        
+        instance.incrementConsecutiveFailures();
+        assertEquals(2, instance.getConsecutiveFailures());
+        
+        instance.resetConsecutiveFailures();
+        assertEquals(0, instance.getConsecutiveFailures());
+    }
+    
+    @Test
+    public void testSetHealthyResetsFailures() {
+        ServiceInstance instance = new ServiceInstance("service-1", "group-1", "localhost", 9090);
+        
+        instance.incrementConsecutiveFailures();
+        instance.incrementConsecutiveFailures();
+        assertEquals(2, instance.getConsecutiveFailures());
+        
+        instance.setHealthy(true);
+        assertEquals(0, instance.getConsecutiveFailures());
+    }
 }

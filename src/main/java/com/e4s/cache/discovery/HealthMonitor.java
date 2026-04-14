@@ -11,6 +11,8 @@ import java.util.concurrent.TimeUnit;
 public class HealthMonitor {
     private static final Logger logger = LoggerFactory.getLogger(HealthMonitor.class);
     
+    private static final int MAX_RETRY_COUNT = 3;
+    
     private final ServiceRegistry serviceRegistry;
     private final CacheServiceClientPool clientPool;
     private final ScheduledExecutorService scheduler;
@@ -29,7 +31,8 @@ public class HealthMonitor {
             return thread;
         });
         
-        logger.info("Created HealthMonitor with check interval: {}ms", checkIntervalMs);
+        logger.info("Created HealthMonitor with check interval: {}ms, max retries: {}", 
+            checkIntervalMs, MAX_RETRY_COUNT);
     }
     
     public void start() {
@@ -93,20 +96,49 @@ public class HealthMonitor {
                 if (!service.isHealthy()) {
                     serviceRegistry.markServiceHealthy(service.getId());
                     logger.info("Service {} recovered and is now healthy", service.getId());
+                } else {
+                    service.resetConsecutiveFailures();
                 }
             } else {
-                if (service.isHealthy()) {
-                    serviceRegistry.markServiceUnhealthy(service.getId());
-                    logger.warn("Service {} marked as unhealthy: {}", 
-                        service.getId(), response.getStatus());
+                int failures = service.incrementConsecutiveFailures();
+                String status = response.getStatus();
+                String reason = status;
+                if (status.equals("offline")) {
+                    reason = "disconnected";
+                } else if (status.startsWith("error:")) {
+                    reason = "error: " + status.substring(7);
+                }
+                
+                if (failures >= MAX_RETRY_COUNT) {
+                    if (service.isHealthy()) {
+                        serviceRegistry.markServiceUnhealthy(service.getId());
+                        logger.warn("Service {} marked as unhealthy after {} failures: {}", 
+                            service.getId(), failures, reason);
+                    } else {
+                        logger.debug("Service {} still unhealthy ({} failures): {}", 
+                            service.getId(), failures, reason);
+                    }
+                } else {
+                    logger.debug("Service {} health check failed ({}/{}): {}", 
+                        service.getId(), failures, MAX_RETRY_COUNT, reason);
                 }
             }
             
         } catch (Exception e) {
-            if (service.isHealthy()) {
-                serviceRegistry.markServiceUnhealthy(service.getId());
-                logger.warn("Service {} marked as unhealthy due to exception: {}", 
-                    service.getId(), e.getMessage());
+            int failures = service.incrementConsecutiveFailures();
+            
+            if (failures >= MAX_RETRY_COUNT) {
+                if (service.isHealthy()) {
+                    serviceRegistry.markServiceUnhealthy(service.getId());
+                    logger.warn("Service {} marked as unhealthy after {} failures: disconnected", 
+                        service.getId(), failures);
+                } else {
+                    logger.debug("Service {} still unhealthy ({} failures): disconnected", 
+                        service.getId(), failures);
+                }
+            } else {
+                logger.debug("Service {} health check failed ({}/{}): disconnected", 
+                    service.getId(), failures, MAX_RETRY_COUNT);
             }
         }
     }
@@ -117,5 +149,9 @@ public class HealthMonitor {
     
     public long getCheckIntervalMs() {
         return checkIntervalMs;
+    }
+    
+    public static int getMaxRetryCount() {
+        return MAX_RETRY_COUNT;
     }
 }

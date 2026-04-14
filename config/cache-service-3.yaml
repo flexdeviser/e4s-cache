@@ -19,7 +19,7 @@ redis:
 
 # Health monitoring configuration
 health:
-  checkIntervalMs: 5000           # Health check interval in milliseconds (5 seconds)
+  checkIntervalMs: 30000           # Health check interval in milliseconds (5 seconds)
 
 # Peer services (other cache services in the cluster)
 peers:

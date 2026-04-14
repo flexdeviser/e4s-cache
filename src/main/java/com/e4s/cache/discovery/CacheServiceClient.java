@@ -91,22 +91,22 @@ public class CacheServiceClient {
             return response;
         } catch (io.grpc.StatusRuntimeException e) {
             if (e.getStatus().getCode() == io.grpc.Status.Code.UNAVAILABLE) {
-                logger.warn("Service unavailable at {}:{} - connection refused", host, port);
+                logger.warn("Service {}:{} is offline - connection refused", host, port);
                 return HealthCheckResponse.newBuilder()
                     .setHealthy(false)
-                    .setStatus("Service unavailable: " + e.getMessage())
+                    .setStatus("offline")
                     .build();
             }
             logger.error("Failed health check for {}:{}", host, port, e);
             return HealthCheckResponse.newBuilder()
                 .setHealthy(false)
-                .setStatus("Health check failed: " + e.getMessage())
+                .setStatus("error: " + e.getStatus().getCode().name())
                 .build();
         } catch (Exception e) {
             logger.error("Failed health check for {}:{}", host, port, e);
             return HealthCheckResponse.newBuilder()
                 .setHealthy(false)
-                .setStatus("Health check failed: " + e.getMessage())
+                .setStatus("error")
                 .build();
         }
     }

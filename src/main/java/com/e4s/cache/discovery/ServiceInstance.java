@@ -1,6 +1,7 @@
 package com.e4s.cache.discovery;
 
 import java.util.Objects;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class ServiceInstance {
     private final String id;
@@ -10,6 +11,7 @@ public class ServiceInstance {
     private volatile boolean healthy;
     private volatile boolean healthChecked;
     private volatile long lastHealthCheck;
+    private final AtomicInteger consecutiveFailures;
     
     public ServiceInstance(String id, String group, String host, int port) {
         this.id = id;
@@ -19,6 +21,7 @@ public class ServiceInstance {
         this.healthy = false;
         this.healthChecked = false;
         this.lastHealthCheck = 0;
+        this.consecutiveFailures = new AtomicInteger(0);
     }
     
     public String getId() {
@@ -45,6 +48,9 @@ public class ServiceInstance {
         this.healthy = healthy;
         this.healthChecked = true;
         this.lastHealthCheck = System.currentTimeMillis();
+        if (healthy) {
+            this.consecutiveFailures.set(0);
+        }
     }
     
     public boolean isHealthChecked() {
@@ -53,6 +59,18 @@ public class ServiceInstance {
     
     public long getLastHealthCheck() {
         return lastHealthCheck;
+    }
+    
+    public int getConsecutiveFailures() {
+        return consecutiveFailures.get();
+    }
+    
+    public int incrementConsecutiveFailures() {
+        return consecutiveFailures.incrementAndGet();
+    }
+    
+    public void resetConsecutiveFailures() {
+        consecutiveFailures.set(0);
     }
     
     public String getAddress() {
