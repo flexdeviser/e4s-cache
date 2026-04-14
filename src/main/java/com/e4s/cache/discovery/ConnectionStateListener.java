@@ -46,7 +46,7 @@ public class ConnectionStateListener implements ClientInterceptor {
                     public void onReady() {
                         if (!connected) {
                             connected = true;
-                            logger.info("Connection established to service: {}", service.getId());
+                            logger.info("✓ Connection established to service: {} (two-way validation)", service.getId());
                             eventListener.fireServiceHealthChanged(service, true, "connected");
                         }
                         super.onReady();
@@ -60,7 +60,7 @@ public class ConnectionStateListener implements ClientInterceptor {
                             if (status.getCode() == io.grpc.Status.Code.UNAVAILABLE) {
                                 reason = "disconnected";
                             }
-                            logger.warn("Connection lost to service: {}, reason: {}", service.getId(), reason);
+                            logger.warn("✗ Connection lost to service: {}, reason: {} (two-way validation)", service.getId(), reason);
                             eventListener.fireServiceHealthChanged(service, false, reason);
                         }
                         super.onClose(status, trailers);

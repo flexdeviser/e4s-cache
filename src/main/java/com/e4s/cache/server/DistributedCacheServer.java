@@ -17,6 +17,7 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
 
 public class DistributedCacheServer {
@@ -108,12 +109,40 @@ public class DistributedCacheServer {
             serviceRegistry.getHealthyServiceCount(),
             serviceRegistry.getUnknownHealthServiceCount());
         
-        logger.info("Event-driven health monitoring enabled - services will be detected automatically");
+        logger.info("Event-driven health monitoring enabled - making initial RPC calls for two-way validation");
+        
+        // Make initial RPC calls to trigger connection state events (two-way validation)
+        for (ServiceInstance service : serviceRegistry.getAllServices()) {
+            if (!service.getId().equals(localService.getId())) {
+                makeInitialRpcCall(service);
+            }
+        }
+        
+        logger.info("Two-way validation: Each service will detect all other services through initial RPC calls");
         
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             logger.info("Shutting down distributed cache server due to JVM shutdown");
             DistributedCacheServer.this.stop();
         }));
+    }
+    
+    private void makeInitialRpcCall(ServiceInstance service) {
+        CompletableFuture.runAsync(() -> {
+            try {
+                logger.info("→ Making initial RPC call to service: {} (two-way validation)", service.getId());
+                var response = clientPool.healthCheck(service);
+                
+                if (response.getHealthy()) {
+                    logger.info("✓ Initial RPC call successful to service: {} (two-way validation complete)", service.getId());
+                } else {
+                    logger.warn("✗ Initial RPC call failed to service: {}, reason: {} (will retry)", 
+                        service.getId(), response.getStatus());
+                }
+            } catch (Exception e) {
+                logger.warn("✗ Initial RPC call failed to service: {}, will be detected by connection events (two-way validation)", 
+                    service.getId());
+            }
+        });
     }
     
     public void stop() {

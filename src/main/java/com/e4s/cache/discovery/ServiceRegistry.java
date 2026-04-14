@@ -27,12 +27,12 @@ public class ServiceRegistry {
             if (healthy) {
                 if (!service.isHealthy()) {
                     service.setHealthy(true);
-                    logger.info("Service {} health changed to healthy: {}", service.getId(), reason);
+                    logger.info("✓ Service {} is now ONLINE - {}", service.getId(), reason);
                 }
             } else {
                 if (service.isHealthy()) {
                     service.setHealthy(false);
-                    logger.warn("Service {} health changed to unhealthy: {}", service.getId(), reason);
+                    logger.warn("✗ Service {} is now OFFLINE - {}", service.getId(), reason);
                 }
             }
         });
