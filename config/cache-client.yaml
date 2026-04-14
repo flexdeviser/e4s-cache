@@ -1,0 +1,19 @@
+# E4S Cache Client Configuration
+
+# Client identification
+clientId: cache-client-1
+
+# Cache services to connect to
+services:
+  - id: cache-service-1
+    group: e4s-cache
+    host: localhost
+    port: 9090
+  - id: cache-service-2
+    group: e4s-cache
+    host: localhost
+    port: 9091
+  - id: cache-service-3
+    group: e4s-cache
+    host: localhost
+    port: 9092

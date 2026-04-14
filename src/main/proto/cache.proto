@@ -1,0 +1,57 @@
+syntax = "proto3";
+
+package e4s.cache;
+
+option java_multiple_files = true;
+option java_package = "com.e4s.cache.grpc";
+option java_outer_classname = "CacheProto";
+
+service CacheService {
+    rpc GetSeries(GetSeriesRequest) returns (GetSeriesResponse);
+    rpc FillSeries(FillSeriesRequest) returns (FillSeriesResponse);
+    rpc HealthCheck(HealthCheckRequest) returns (HealthCheckResponse);
+}
+
+message GetSeriesRequest {
+    string sensor_id = 1;
+    int64 start_time = 2;
+    int64 end_time = 3;
+    repeated string attributes = 4;
+}
+
+message GetSeriesResponse {
+    bool success = 1;
+    repeated AttributeData attribute_data = 2;
+    string error = 3;
+}
+
+message AttributeData {
+    string attribute = 1;
+    repeated int64 timestamps = 2;
+    repeated double values = 3;
+}
+
+message FillSeriesRequest {
+    string sensor_id = 1;
+    repeated DataPoint data_points = 2;
+}
+
+message DataPoint {
+    int64 timestamp = 1;
+    string attribute = 2;
+    double value = 3;
+}
+
+message FillSeriesResponse {
+    bool success = 1;
+    int64 filled_count = 2;
+    string error = 3;
+}
+
+message HealthCheckRequest {
+}
+
+message HealthCheckResponse {
+    bool healthy = 1;
+    string status = 2;
+}

@@ -1,0 +1,1793 @@
+2026-04-14 13:12:42.276 [main] INFO  com.e4s.cache.server.CacheServer - Cache Server started, listening on port 9090
+2026-04-14 13:14:34.692 [Thread-0] INFO  com.e4s.cache.server.CacheServer - Shutting down gRPC server due to JVM shutdown
+2026-04-14 13:14:34.695 [Thread-0] INFO  com.e4s.cache.server.CacheServer - Cache Server stopped
+2026-04-14 14:41:35.666 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:41:35.672 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:41:35.672 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:41:35.672 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Added service service-4 to hash ring
+2026-04-14 14:41:35.673 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:41:35.673 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:41:35.674 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:41:35.674 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Removed service service-2 from hash ring
+2026-04-14 14:41:35.674 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:41:35.674 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Removed service service-2 from hash ring
+2026-04-14 14:41:35.674 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Rebuilt hash ring with 200 virtual nodes
+2026-04-14 14:41:35.675 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:41:35.675 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:41:35.676 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:41:35.679 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:41:35.679 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 14:41:35.679 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 14:41:35.680 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:41:35.681 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 14:41:35.681 [main] INFO  c.e.cache.discovery.ServiceRegistry - Unregistered service: service-1
+2026-04-14 14:41:35.681 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:41:35.681 [main] WARN  c.e.cache.discovery.ServiceRegistry - Marked service as unhealthy: service-1
+2026-04-14 14:41:35.681 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:41:35.681 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 14:41:35.682 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 14:41:35.682 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:41:35.682 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 14:41:35.682 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 14:41:35.682 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:41:35.682 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 14:41:35.682 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 14:41:35.683 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:41:35.683 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 14:41:35.683 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 14:41:35.683 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:41:35.683 [main] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: service-1
+2026-04-14 14:41:35.683 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:41:54.817 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:41:54.822 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:41:54.823 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:41:54.823 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Added service service-4 to hash ring
+2026-04-14 14:41:54.823 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:41:54.823 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:41:54.824 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:41:54.824 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Removed service service-2 from hash ring
+2026-04-14 14:41:54.824 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:41:54.824 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Removed service service-2 from hash ring
+2026-04-14 14:41:54.825 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Rebuilt hash ring with 200 virtual nodes
+2026-04-14 14:41:54.825 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:41:54.826 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:41:54.826 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:41:54.829 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:41:54.829 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 14:41:54.829 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 14:41:54.830 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:41:54.830 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 14:41:54.830 [main] INFO  c.e.cache.discovery.ServiceRegistry - Unregistered service: service-1
+2026-04-14 14:41:54.831 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:41:54.831 [main] WARN  c.e.cache.discovery.ServiceRegistry - Marked service as unhealthy: service-1
+2026-04-14 14:41:54.831 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:41:54.831 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 14:41:54.831 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 14:41:54.832 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:41:54.832 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 14:41:54.832 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 14:41:54.832 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:41:54.832 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 14:41:54.832 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 14:41:54.832 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:41:54.832 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 14:41:54.832 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 14:41:54.833 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:41:54.833 [main] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: service-1
+2026-04-14 14:41:54.833 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:46:44.877 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-1 in group: e4s-cache
+2026-04-14 14:46:44.880 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 100 virtual nodes for 1 services
+2026-04-14 14:46:44.977 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9090
+2026-04-14 14:46:44.978 [main] INFO  c.e.c.d.CacheServiceClientPool - Created client pool for 1 services
+2026-04-14 14:46:44.978 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Created HealthMonitor with check interval: 5000ms
+2026-04-14 14:46:44.979 [main] INFO  c.e.c.d.DistributedChunkManager - Created DistributedChunkManager for service: cache-service-1
+2026-04-14 14:46:44.979 [main] INFO  c.e.c.d.DistributedCacheServiceImpl - Created DistributedCacheServiceImpl for service: cache-service-1
+2026-04-14 14:46:45.000 [main] INFO  c.e.c.server.DistributedCacheServer - Created DistributedCacheServer: cache-service-1@localhost:9090 with 0 peer services
+2026-04-14 14:46:45.057 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Started HealthMonitor
+2026-04-14 14:46:45.057 [main] INFO  c.e.c.server.DistributedCacheServer - Distributed Cache Server started, listening on port 9090
+2026-04-14 14:46:45.057 [main] INFO  c.e.c.server.DistributedCacheServer - Service ID: cache-service-1, Group: e4s-cache
+2026-04-14 14:46:45.058 [main] INFO  c.e.c.server.DistributedCacheServer - Total services: 1, Healthy services: 1
+2026-04-14 14:46:50.062 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:46:50.172 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:46:50.172 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:46:53.079 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Shutting down distributed cache server due to JVM shutdown
+2026-04-14 14:46:53.079 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Stopping distributed cache server...
+2026-04-14 14:46:53.079 [Thread-0] INFO  c.e4s.cache.discovery.HealthMonitor - Stopped HealthMonitor
+2026-04-14 14:46:53.085 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - gRPC server stopped
+2026-04-14 14:46:53.086 [Thread-0] INFO  c.e.c.d.DistributedChunkManager - Shutdown DistributedChunkManager
+2026-04-14 14:46:53.087 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9090
+2026-04-14 14:46:53.088 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Distributed cache server stopped
+2026-04-14 14:47:15.986 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-1 in group: e4s-cache
+2026-04-14 14:47:15.989 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 100 virtual nodes for 1 services
+2026-04-14 14:47:16.086 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9090
+2026-04-14 14:47:16.087 [main] INFO  c.e.c.d.CacheServiceClientPool - Created client pool for 1 services
+2026-04-14 14:47:16.088 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Created HealthMonitor with check interval: 5000ms
+2026-04-14 14:47:16.088 [main] INFO  c.e.c.d.DistributedChunkManager - Created DistributedChunkManager for service: cache-service-1
+2026-04-14 14:47:16.089 [main] INFO  c.e.c.d.DistributedCacheServiceImpl - Created DistributedCacheServiceImpl for service: cache-service-1
+2026-04-14 14:47:16.109 [main] INFO  c.e.c.server.DistributedCacheServer - Created DistributedCacheServer: cache-service-1@localhost:9090 with 0 peer services
+2026-04-14 14:47:16.164 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Started HealthMonitor
+2026-04-14 14:47:16.165 [main] INFO  c.e.c.server.DistributedCacheServer - Distributed Cache Server started, listening on port 9090
+2026-04-14 14:47:16.165 [main] INFO  c.e.c.server.DistributedCacheServer - Service ID: cache-service-1, Group: e4s-cache
+2026-04-14 14:47:16.165 [main] INFO  c.e.c.server.DistributedCacheServer - Total services: 1, Healthy services: 1
+2026-04-14 14:47:21.170 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:47:21.278 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:47:21.278 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:47:26.166 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:47:26.171 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:47:26.171 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:47:31.165 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:47:31.169 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:47:31.169 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:47:36.166 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:47:36.168 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:47:36.169 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:47:41.166 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:47:41.168 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:47:41.168 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:47:41.597 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-2 in group: e4s-cache
+2026-04-14 14:47:41.600 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 100 virtual nodes for 1 services
+2026-04-14 14:47:41.699 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9091
+2026-04-14 14:47:41.699 [main] INFO  c.e.c.d.CacheServiceClientPool - Created client pool for 1 services
+2026-04-14 14:47:41.700 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Created HealthMonitor with check interval: 5000ms
+2026-04-14 14:47:41.700 [main] INFO  c.e.c.d.DistributedChunkManager - Created DistributedChunkManager for service: cache-service-2
+2026-04-14 14:47:41.701 [main] INFO  c.e.c.d.DistributedCacheServiceImpl - Created DistributedCacheServiceImpl for service: cache-service-2
+2026-04-14 14:47:41.720 [main] INFO  c.e.c.server.DistributedCacheServer - Created DistributedCacheServer: cache-service-2@localhost:9091 with 0 peer services
+2026-04-14 14:47:41.782 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Started HealthMonitor
+2026-04-14 14:47:41.783 [main] INFO  c.e.c.server.DistributedCacheServer - Distributed Cache Server started, listening on port 9091
+2026-04-14 14:47:41.783 [main] INFO  c.e.c.server.DistributedCacheServer - Service ID: cache-service-2, Group: e4s-cache
+2026-04-14 14:47:41.784 [main] INFO  c.e.c.server.DistributedCacheServer - Total services: 1, Healthy services: 1
+2026-04-14 14:47:46.164 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:47:46.166 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:47:46.166 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:47:46.785 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:47:46.887 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:47:46.887 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:47:51.169 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:47:51.173 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:47:51.173 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:47:51.787 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:47:51.791 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:47:51.792 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:47:56.164 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:47:56.167 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:47:56.167 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:47:56.787 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:47:56.791 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:47:56.791 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:01.164 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:01.166 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:01.166 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:01.787 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:01.789 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:01.789 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:06.169 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:06.173 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:06.173 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:06.782 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:06.786 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:06.786 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:09.220 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-3 in group: e4s-cache
+2026-04-14 14:48:09.224 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-1 in group: e4s-cache
+2026-04-14 14:48:09.224 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-2 in group: e4s-cache
+2026-04-14 14:48:09.225 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:48:09.322 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9090
+2026-04-14 14:48:09.323 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9091
+2026-04-14 14:48:09.323 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9092
+2026-04-14 14:48:09.323 [main] INFO  c.e.c.d.CacheServiceClientPool - Created client pool for 3 services
+2026-04-14 14:48:09.324 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Created HealthMonitor with check interval: 5000ms
+2026-04-14 14:48:09.324 [main] INFO  c.e.c.d.DistributedChunkManager - Created DistributedChunkManager for service: cache-service-3
+2026-04-14 14:48:09.325 [main] INFO  c.e.c.d.DistributedCacheServiceImpl - Created DistributedCacheServiceImpl for service: cache-service-3
+2026-04-14 14:48:09.344 [main] INFO  c.e.c.server.DistributedCacheServer - Created DistributedCacheServer: cache-service-3@localhost:9092 with 2 peer services
+2026-04-14 14:48:09.401 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Started HealthMonitor
+2026-04-14 14:48:09.401 [main] INFO  c.e.c.server.DistributedCacheServer - Distributed Cache Server started, listening on port 9092
+2026-04-14 14:48:09.401 [main] INFO  c.e.c.server.DistributedCacheServer - Service ID: cache-service-3, Group: e4s-cache
+2026-04-14 14:48:09.402 [main] INFO  c.e.c.server.DistributedCacheServer - Total services: 3, Healthy services: 3
+2026-04-14 14:48:11.164 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:11.167 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:11.168 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:11.782 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:11.786 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:11.786 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:14.406 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:48:14.498 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:14.504 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:14.530 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:48:14.530 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:48:16.164 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:16.168 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:16.168 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:16.787 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:16.791 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:16.791 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:19.405 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:48:19.408 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:19.411 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:19.414 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:48:19.414 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:48:21.167 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:21.169 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:21.169 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:21.782 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:21.786 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:21.786 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:24.404 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:48:24.408 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:24.411 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:24.412 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:48:24.413 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:48:26.169 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:26.172 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:26.173 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:26.787 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:26.791 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:26.791 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:29.405 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:48:29.408 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:29.410 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:29.412 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:48:29.412 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:48:31.169 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:31.172 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:31.172 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:31.786 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:31.788 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:31.789 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:34.401 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:48:34.406 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:34.409 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:34.410 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:48:34.410 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:48:36.164 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:36.167 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:36.168 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:36.786 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:36.790 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:36.790 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:39.405 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:48:39.408 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:39.410 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:39.412 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:48:39.413 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:48:41.169 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:41.172 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:41.172 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:41.782 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:41.784 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:41.784 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:44.405 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:48:44.410 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:44.412 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:44.414 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:48:44.414 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:48:46.164 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:46.167 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:46.167 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:46.787 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:46.789 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:46.789 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:49.400 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:48:49.405 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:49.408 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:49.409 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:48:49.409 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:48:51.164 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:51.167 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:51.168 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:51.787 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:51.790 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:51.790 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:54.400 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:48:54.403 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:54.405 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:54.407 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:48:54.407 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:48:56.164 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:56.167 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:56.168 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:56.786 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:48:56.791 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:56.791 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:48:59.404 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:48:59.408 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:48:59.411 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:48:59.413 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:48:59.413 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:49:01.164 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:49:01.167 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:49:01.167 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:49:01.782 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:49:01.784 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:49:01.784 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:49:02.692 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Shutting down distributed cache server due to JVM shutdown
+2026-04-14 14:49:02.692 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Stopping distributed cache server...
+2026-04-14 14:49:02.692 [Thread-0] INFO  c.e4s.cache.discovery.HealthMonitor - Stopped HealthMonitor
+2026-04-14 14:49:02.697 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - gRPC server stopped
+2026-04-14 14:49:02.698 [Thread-0] INFO  c.e.c.d.DistributedChunkManager - Shutdown DistributedChunkManager
+2026-04-14 14:49:02.699 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9090
+2026-04-14 14:49:02.699 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9091
+2026-04-14 14:49:02.699 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9092
+2026-04-14 14:49:02.700 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Distributed cache server stopped
+2026-04-14 14:49:06.166 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:49:06.168 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:49:06.168 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:49:06.785 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:49:06.788 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:49:06.788 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:49:11.165 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:49:11.168 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:49:11.169 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:49:11.787 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:49:11.790 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:49:11.790 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:49:16.168 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:49:16.170 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:49:16.170 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:49:16.782 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 1 services
+2026-04-14 14:49:16.784 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:49:16.784 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/1
+2026-04-14 14:49:18.655 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Shutting down distributed cache server due to JVM shutdown
+2026-04-14 14:49:18.656 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Stopping distributed cache server...
+2026-04-14 14:49:18.656 [Thread-0] INFO  c.e4s.cache.discovery.HealthMonitor - Stopped HealthMonitor
+2026-04-14 14:49:18.660 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - gRPC server stopped
+2026-04-14 14:49:18.660 [Thread-0] INFO  c.e.c.d.DistributedChunkManager - Shutdown DistributedChunkManager
+2026-04-14 14:49:18.661 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9091
+2026-04-14 14:49:18.662 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Distributed cache server stopped
+2026-04-14 14:49:20.372 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Shutting down distributed cache server due to JVM shutdown
+2026-04-14 14:49:20.372 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Stopping distributed cache server...
+2026-04-14 14:49:20.372 [Thread-0] INFO  c.e4s.cache.discovery.HealthMonitor - Stopped HealthMonitor
+2026-04-14 14:49:20.376 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - gRPC server stopped
+2026-04-14 14:49:20.376 [Thread-0] INFO  c.e.c.d.DistributedChunkManager - Shutdown DistributedChunkManager
+2026-04-14 14:49:20.377 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9090
+2026-04-14 14:49:20.378 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Distributed cache server stopped
+2026-04-14 14:50:42.370 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-3 in group: e4s-cache
+2026-04-14 14:50:42.373 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-2 in group: e4s-cache
+2026-04-14 14:50:42.374 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-3 in group: e4s-cache
+2026-04-14 14:50:42.374 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 200 virtual nodes for 2 services
+2026-04-14 14:50:42.474 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9091
+2026-04-14 14:50:42.474 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9092
+2026-04-14 14:50:42.475 [main] INFO  c.e.c.d.CacheServiceClientPool - Created client pool for 2 services
+2026-04-14 14:50:42.475 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Created HealthMonitor with check interval: 5000ms
+2026-04-14 14:50:42.476 [main] INFO  c.e.c.d.DistributedChunkManager - Created DistributedChunkManager for service: cache-service-3
+2026-04-14 14:50:42.476 [main] INFO  c.e.c.d.DistributedCacheServiceImpl - Created DistributedCacheServiceImpl for service: cache-service-3
+2026-04-14 14:50:42.497 [main] INFO  c.e.c.server.DistributedCacheServer - Created DistributedCacheServer: cache-service-3@localhost:9092 with 2 peer services
+2026-04-14 14:50:42.556 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Started HealthMonitor
+2026-04-14 14:50:42.556 [main] INFO  c.e.c.server.DistributedCacheServer - Distributed Cache Server started, listening on port 9092
+2026-04-14 14:50:42.556 [main] INFO  c.e.c.server.DistributedCacheServer - Service ID: cache-service-3, Group: e4s-cache
+2026-04-14 14:50:42.557 [main] INFO  c.e.c.server.DistributedCacheServer - Total services: 2, Healthy services: 2
+2026-04-14 14:50:47.557 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 2 services
+2026-04-14 14:50:47.614 [health-monitor] ERROR c.e.c.discovery.CacheServiceClient - Failed health check for localhost:9091
+io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:50:47.615 [health-monitor] ERROR c.e.c.d.CacheServiceClientPool - Failed health check for service: cache-service-2
+java.lang.RuntimeException: Failed health check: UNAVAILABLE: io exception
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:80)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	... 10 common frames omitted
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:50:47.616 [health-monitor] WARN  c.e.cache.discovery.ServiceRegistry - Marked service as unhealthy: cache-service-2
+2026-04-14 14:50:47.616 [health-monitor] WARN  c.e4s.cache.discovery.HealthMonitor - Service cache-service-2 marked as unhealthy: Health check failed: Failed health check: UNAVAILABLE: io exception
+2026-04-14 14:50:47.666 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:50:47.666 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/2
+2026-04-14 14:50:52.560 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 2 services
+2026-04-14 14:50:52.560 [health-monitor] ERROR c.e.c.discovery.CacheServiceClient - Failed health check for localhost:9091
+io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:50:52.560 [health-monitor] ERROR c.e.c.d.CacheServiceClientPool - Failed health check for service: cache-service-2
+java.lang.RuntimeException: Failed health check: UNAVAILABLE: io exception
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:80)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	... 10 common frames omitted
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:50:52.563 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:50:52.563 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/2
+2026-04-14 14:50:57.556 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 2 services
+2026-04-14 14:50:57.556 [health-monitor] ERROR c.e.c.discovery.CacheServiceClient - Failed health check for localhost:9091
+io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:50:57.556 [health-monitor] ERROR c.e.c.d.CacheServiceClientPool - Failed health check for service: cache-service-2
+java.lang.RuntimeException: Failed health check: UNAVAILABLE: io exception
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:80)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	... 10 common frames omitted
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:50:57.559 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:50:57.559 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/2
+2026-04-14 14:51:02.557 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 2 services
+2026-04-14 14:51:02.558 [health-monitor] ERROR c.e.c.discovery.CacheServiceClient - Failed health check for localhost:9091
+io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:51:02.558 [health-monitor] ERROR c.e.c.d.CacheServiceClientPool - Failed health check for service: cache-service-2
+java.lang.RuntimeException: Failed health check: UNAVAILABLE: io exception
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:80)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	... 10 common frames omitted
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:51:02.561 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:51:02.561 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/2
+2026-04-14 14:51:06.783 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Shutting down distributed cache server due to JVM shutdown
+2026-04-14 14:51:06.784 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Stopping distributed cache server...
+2026-04-14 14:51:06.784 [Thread-0] INFO  c.e4s.cache.discovery.HealthMonitor - Stopped HealthMonitor
+2026-04-14 14:51:06.790 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - gRPC server stopped
+2026-04-14 14:51:06.790 [Thread-0] INFO  c.e.c.d.DistributedChunkManager - Shutdown DistributedChunkManager
+2026-04-14 14:51:06.791 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9091
+2026-04-14 14:51:06.791 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9092
+2026-04-14 14:51:06.792 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Distributed cache server stopped
+2026-04-14 14:52:20.375 [main] ERROR c.e.c.server.DistributedCacheServer - Failed to start distributed cache server
+java.lang.IllegalArgumentException: Config file not found: /Users/eric.w/Workspace/e4s/ai/open-code/e4s-cahce/cache-service-1
+	at com.e4s.cache.config.ConfigLoader.loadConfig(ConfigLoader.java:33)
+	at com.e4s.cache.server.DistributedCacheServer.main(DistributedCacheServer.java:169)
+2026-04-14 14:55:28.094 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:55:28.098 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:55:28.098 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:55:28.098 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Added service service-4 to hash ring
+2026-04-14 14:55:28.098 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:55:28.099 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:55:28.099 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:55:28.099 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Removed service service-2 from hash ring
+2026-04-14 14:55:28.099 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:55:28.099 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Removed service service-2 from hash ring
+2026-04-14 14:55:28.100 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Rebuilt hash ring with 200 virtual nodes
+2026-04-14 14:55:28.100 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:55:28.100 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:55:28.101 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:55:28.104 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:55:28.104 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 14:55:28.104 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 14:55:28.105 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:55:28.105 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 14:55:28.105 [main] INFO  c.e.cache.discovery.ServiceRegistry - Unregistered service: service-1
+2026-04-14 14:55:28.105 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:55:28.105 [main] WARN  c.e.cache.discovery.ServiceRegistry - Marked service as unhealthy: service-1
+2026-04-14 14:55:28.105 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:55:28.106 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 14:55:28.106 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 14:55:28.106 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:55:28.106 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 14:55:28.106 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 14:55:28.107 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:55:28.107 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 14:55:28.107 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 14:55:28.107 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:55:28.107 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 14:55:28.107 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 14:55:28.107 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:55:28.107 [main] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: service-1
+2026-04-14 14:55:28.107 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 14:57:31.797 [main] INFO  com.e4s.cache.config.ConfigLoader - Loading configuration from: /Users/eric.w/Workspace/e4s/ai/open-code/e4s-cahce/config/cache-service-1.yaml
+2026-04-14 14:57:31.850 [main] INFO  com.e4s.cache.config.ConfigLoader - Configuration loaded successfully
+2026-04-14 14:57:31.912 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-1 in group: e4s-cache
+2026-04-14 14:57:31.912 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-2 in group: e4s-cache
+2026-04-14 14:57:31.912 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-3 in group: e4s-cache
+2026-04-14 14:57:31.913 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:57:32.009 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9090
+2026-04-14 14:57:32.010 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9091
+2026-04-14 14:57:32.010 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9092
+2026-04-14 14:57:32.010 [main] INFO  c.e.c.d.CacheServiceClientPool - Created client pool for 3 services
+2026-04-14 14:57:32.011 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Created HealthMonitor with check interval: 5000ms
+2026-04-14 14:57:32.011 [main] INFO  c.e.c.d.DistributedChunkManager - Created DistributedChunkManager for service: cache-service-1
+2026-04-14 14:57:32.012 [main] INFO  c.e.c.d.DistributedCacheServiceImpl - Created DistributedCacheServiceImpl for service: cache-service-1
+2026-04-14 14:57:32.034 [main] INFO  c.e.c.server.DistributedCacheServer - Created DistributedCacheServer: cache-service-1@localhost:9090 with 2 peer services
+2026-04-14 14:57:32.090 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Started HealthMonitor
+2026-04-14 14:57:32.090 [main] INFO  c.e.c.server.DistributedCacheServer - Distributed Cache Server started, listening on port 9090
+2026-04-14 14:57:32.090 [main] INFO  c.e.c.server.DistributedCacheServer - Service ID: cache-service-1, Group: e4s-cache
+2026-04-14 14:57:32.091 [main] INFO  c.e.c.server.DistributedCacheServer - Total services: 3, Healthy services: 3
+2026-04-14 14:57:37.090 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:57:37.195 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:57:37.200 [health-monitor] ERROR c.e.c.discovery.CacheServiceClient - Failed health check for localhost:9091
+io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:57:37.201 [health-monitor] ERROR c.e.c.d.CacheServiceClientPool - Failed health check for service: cache-service-2
+java.lang.RuntimeException: Failed health check: UNAVAILABLE: io exception
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:80)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	... 10 common frames omitted
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:57:37.202 [health-monitor] WARN  c.e.cache.discovery.ServiceRegistry - Marked service as unhealthy: cache-service-2
+2026-04-14 14:57:37.202 [health-monitor] WARN  c.e4s.cache.discovery.HealthMonitor - Service cache-service-2 marked as unhealthy: Health check failed: Failed health check: UNAVAILABLE: io exception
+2026-04-14 14:57:37.204 [health-monitor] ERROR c.e.c.discovery.CacheServiceClient - Failed health check for localhost:9092
+io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9092
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:57:37.204 [health-monitor] ERROR c.e.c.d.CacheServiceClientPool - Failed health check for service: cache-service-3
+java.lang.RuntimeException: Failed health check: UNAVAILABLE: io exception
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:80)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	... 10 common frames omitted
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9092
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:57:37.204 [health-monitor] WARN  c.e.cache.discovery.ServiceRegistry - Marked service as unhealthy: cache-service-3
+2026-04-14 14:57:37.204 [health-monitor] WARN  c.e4s.cache.discovery.HealthMonitor - Service cache-service-3 marked as unhealthy: Health check failed: Failed health check: UNAVAILABLE: io exception
+2026-04-14 14:57:37.204 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/3
+2026-04-14 14:57:41.652 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Shutting down distributed cache server due to JVM shutdown
+2026-04-14 14:57:41.652 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Stopping distributed cache server...
+2026-04-14 14:57:41.652 [Thread-0] INFO  c.e4s.cache.discovery.HealthMonitor - Stopped HealthMonitor
+2026-04-14 14:57:41.658 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - gRPC server stopped
+2026-04-14 14:57:41.662 [Thread-0] INFO  c.e.c.d.DistributedChunkManager - Shutdown DistributedChunkManager
+2026-04-14 14:57:41.662 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9090
+2026-04-14 14:57:41.666 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9091
+2026-04-14 14:57:41.667 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9092
+2026-04-14 14:57:41.667 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Distributed cache server stopped
+2026-04-14 14:58:46.076 [main] INFO  com.e4s.cache.config.ConfigLoader - Loading configuration from: /Users/eric.w/Workspace/e4s/ai/open-code/e4s-cahce/config/cache-service-3.yaml
+2026-04-14 14:58:46.125 [main] INFO  com.e4s.cache.config.ConfigLoader - Configuration loaded successfully
+2026-04-14 14:58:46.186 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-3 in group: e4s-cache
+2026-04-14 14:58:46.186 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-1 in group: e4s-cache
+2026-04-14 14:58:46.186 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-2 in group: e4s-cache
+2026-04-14 14:58:46.187 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:58:46.280 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9090
+2026-04-14 14:58:46.280 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9091
+2026-04-14 14:58:46.280 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9092
+2026-04-14 14:58:46.280 [main] INFO  c.e.c.d.CacheServiceClientPool - Created client pool for 3 services
+2026-04-14 14:58:46.281 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Created HealthMonitor with check interval: 5000ms
+2026-04-14 14:58:46.282 [main] INFO  c.e.c.d.DistributedChunkManager - Created DistributedChunkManager for service: cache-service-3
+2026-04-14 14:58:46.282 [main] INFO  c.e.c.d.DistributedCacheServiceImpl - Created DistributedCacheServiceImpl for service: cache-service-3
+2026-04-14 14:58:46.303 [main] INFO  c.e.c.server.DistributedCacheServer - Created DistributedCacheServer: cache-service-3@localhost:9092 with 2 peer services
+2026-04-14 14:58:46.359 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Started HealthMonitor
+2026-04-14 14:58:46.360 [main] INFO  c.e.c.server.DistributedCacheServer - Distributed Cache Server started, listening on port 9092
+2026-04-14 14:58:46.360 [main] INFO  c.e.c.server.DistributedCacheServer - Service ID: cache-service-3, Group: e4s-cache
+2026-04-14 14:58:46.361 [main] INFO  c.e.c.server.DistributedCacheServer - Total services: 3, Healthy services: 3
+2026-04-14 14:58:51.365 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:58:51.426 [health-monitor] ERROR c.e.c.discovery.CacheServiceClient - Failed health check for localhost:9090
+io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9090
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:58:51.427 [health-monitor] ERROR c.e.c.d.CacheServiceClientPool - Failed health check for service: cache-service-1
+java.lang.RuntimeException: Failed health check: UNAVAILABLE: io exception
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:80)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	... 10 common frames omitted
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9090
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:58:51.428 [health-monitor] WARN  c.e.cache.discovery.ServiceRegistry - Marked service as unhealthy: cache-service-1
+2026-04-14 14:58:51.428 [health-monitor] WARN  c.e4s.cache.discovery.HealthMonitor - Service cache-service-1 marked as unhealthy: Health check failed: Failed health check: UNAVAILABLE: io exception
+2026-04-14 14:58:51.431 [health-monitor] ERROR c.e.c.discovery.CacheServiceClient - Failed health check for localhost:9091
+io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:58:51.431 [health-monitor] ERROR c.e.c.d.CacheServiceClientPool - Failed health check for service: cache-service-2
+java.lang.RuntimeException: Failed health check: UNAVAILABLE: io exception
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:80)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	... 10 common frames omitted
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:58:51.431 [health-monitor] WARN  c.e.cache.discovery.ServiceRegistry - Marked service as unhealthy: cache-service-2
+2026-04-14 14:58:51.431 [health-monitor] WARN  c.e4s.cache.discovery.HealthMonitor - Service cache-service-2 marked as unhealthy: Health check failed: Failed health check: UNAVAILABLE: io exception
+2026-04-14 14:58:51.480 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:58:51.480 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/3
+2026-04-14 14:58:53.224 [main] INFO  com.e4s.cache.config.ConfigLoader - Loading configuration from: /Users/eric.w/Workspace/e4s/ai/open-code/e4s-cahce/config/cache-service-1.yaml
+2026-04-14 14:58:53.269 [main] INFO  com.e4s.cache.config.ConfigLoader - Configuration loaded successfully
+2026-04-14 14:58:53.330 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-1 in group: e4s-cache
+2026-04-14 14:58:53.330 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-2 in group: e4s-cache
+2026-04-14 14:58:53.330 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-3 in group: e4s-cache
+2026-04-14 14:58:53.331 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:58:53.429 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9090
+2026-04-14 14:58:53.429 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9091
+2026-04-14 14:58:53.429 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9092
+2026-04-14 14:58:53.429 [main] INFO  c.e.c.d.CacheServiceClientPool - Created client pool for 3 services
+2026-04-14 14:58:53.430 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Created HealthMonitor with check interval: 5000ms
+2026-04-14 14:58:53.431 [main] INFO  c.e.c.d.DistributedChunkManager - Created DistributedChunkManager for service: cache-service-1
+2026-04-14 14:58:53.431 [main] INFO  c.e.c.d.DistributedCacheServiceImpl - Created DistributedCacheServiceImpl for service: cache-service-1
+2026-04-14 14:58:53.453 [main] INFO  c.e.c.server.DistributedCacheServer - Created DistributedCacheServer: cache-service-1@localhost:9090 with 2 peer services
+2026-04-14 14:58:53.509 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Started HealthMonitor
+2026-04-14 14:58:53.509 [main] INFO  c.e.c.server.DistributedCacheServer - Distributed Cache Server started, listening on port 9090
+2026-04-14 14:58:53.509 [main] INFO  c.e.c.server.DistributedCacheServer - Service ID: cache-service-1, Group: e4s-cache
+2026-04-14 14:58:53.510 [main] INFO  c.e.c.server.DistributedCacheServer - Total services: 3, Healthy services: 3
+2026-04-14 14:58:56.359 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:58:56.395 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:58:56.395 [health-monitor] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: cache-service-1
+2026-04-14 14:58:56.395 [health-monitor] INFO  c.e4s.cache.discovery.HealthMonitor - Service cache-service-1 recovered and is now healthy
+2026-04-14 14:58:56.395 [health-monitor] ERROR c.e.c.discovery.CacheServiceClient - Failed health check for localhost:9091
+io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:58:56.396 [health-monitor] ERROR c.e.c.d.CacheServiceClientPool - Failed health check for service: cache-service-2
+java.lang.RuntimeException: Failed health check: UNAVAILABLE: io exception
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:80)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	... 10 common frames omitted
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:58:56.398 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:58:56.398 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 2/3
+2026-04-14 14:58:58.514 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:58:58.545 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:58:58.550 [health-monitor] ERROR c.e.c.discovery.CacheServiceClient - Failed health check for localhost:9091
+io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:58:58.551 [health-monitor] ERROR c.e.c.d.CacheServiceClientPool - Failed health check for service: cache-service-2
+java.lang.RuntimeException: Failed health check: UNAVAILABLE: io exception
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:80)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	... 10 common frames omitted
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:58:58.552 [health-monitor] WARN  c.e.cache.discovery.ServiceRegistry - Marked service as unhealthy: cache-service-2
+2026-04-14 14:58:58.552 [health-monitor] WARN  c.e4s.cache.discovery.HealthMonitor - Service cache-service-2 marked as unhealthy: Health check failed: Failed health check: UNAVAILABLE: io exception
+2026-04-14 14:58:58.557 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:58:58.557 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 2/3
+2026-04-14 14:59:01.364 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:59:01.366 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:59:01.367 [health-monitor] ERROR c.e.c.discovery.CacheServiceClient - Failed health check for localhost:9091
+io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:59:01.367 [health-monitor] ERROR c.e.c.d.CacheServiceClientPool - Failed health check for service: cache-service-2
+java.lang.RuntimeException: Failed health check: UNAVAILABLE: io exception
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:80)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	... 10 common frames omitted
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:59:01.369 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:59:01.369 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 2/3
+2026-04-14 14:59:03.513 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:59:03.516 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:59:03.516 [health-monitor] ERROR c.e.c.discovery.CacheServiceClient - Failed health check for localhost:9091
+io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:59:03.517 [health-monitor] ERROR c.e.c.d.CacheServiceClientPool - Failed health check for service: cache-service-2
+java.lang.RuntimeException: Failed health check: UNAVAILABLE: io exception
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:80)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	... 10 common frames omitted
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:59:03.519 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:59:03.519 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 2/3
+2026-04-14 14:59:04.970 [main] INFO  com.e4s.cache.config.ConfigLoader - Loading configuration from: /Users/eric.w/Workspace/e4s/ai/open-code/e4s-cahce/config/cache-service-2.yaml
+2026-04-14 14:59:05.020 [main] INFO  com.e4s.cache.config.ConfigLoader - Configuration loaded successfully
+2026-04-14 14:59:05.083 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-2 in group: e4s-cache
+2026-04-14 14:59:05.083 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-1 in group: e4s-cache
+2026-04-14 14:59:05.083 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-3 in group: e4s-cache
+2026-04-14 14:59:05.084 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 14:59:05.181 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9090
+2026-04-14 14:59:05.181 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9091
+2026-04-14 14:59:05.182 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9092
+2026-04-14 14:59:05.182 [main] INFO  c.e.c.d.CacheServiceClientPool - Created client pool for 3 services
+2026-04-14 14:59:05.183 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Created HealthMonitor with check interval: 5000ms
+2026-04-14 14:59:05.183 [main] INFO  c.e.c.d.DistributedChunkManager - Created DistributedChunkManager for service: cache-service-2
+2026-04-14 14:59:05.184 [main] INFO  c.e.c.d.DistributedCacheServiceImpl - Created DistributedCacheServiceImpl for service: cache-service-2
+2026-04-14 14:59:05.207 [main] INFO  c.e.c.server.DistributedCacheServer - Created DistributedCacheServer: cache-service-2@localhost:9091 with 2 peer services
+2026-04-14 14:59:05.262 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Started HealthMonitor
+2026-04-14 14:59:05.263 [main] INFO  c.e.c.server.DistributedCacheServer - Distributed Cache Server started, listening on port 9091
+2026-04-14 14:59:05.263 [main] INFO  c.e.c.server.DistributedCacheServer - Service ID: cache-service-2, Group: e4s-cache
+2026-04-14 14:59:05.264 [main] INFO  c.e.c.server.DistributedCacheServer - Total services: 3, Healthy services: 3
+2026-04-14 14:59:06.363 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:59:06.366 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:59:06.367 [health-monitor] ERROR c.e.c.discovery.CacheServiceClient - Failed health check for localhost:9091
+io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:59:06.367 [health-monitor] ERROR c.e.c.d.CacheServiceClientPool - Failed health check for service: cache-service-2
+java.lang.RuntimeException: Failed health check: UNAVAILABLE: io exception
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:80)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	... 10 common frames omitted
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:59:06.369 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:59:06.369 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 2/3
+2026-04-14 14:59:08.514 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:59:08.516 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:59:08.551 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:59:08.551 [health-monitor] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: cache-service-2
+2026-04-14 14:59:08.551 [health-monitor] INFO  c.e4s.cache.discovery.HealthMonitor - Service cache-service-2 recovered and is now healthy
+2026-04-14 14:59:08.554 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:59:08.554 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:59:10.268 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:59:10.301 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:59:10.306 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:59:10.310 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:59:10.311 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:59:11.361 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:59:11.364 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:59:11.366 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:59:11.367 [health-monitor] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: cache-service-2
+2026-04-14 14:59:11.367 [health-monitor] INFO  c.e4s.cache.discovery.HealthMonitor - Service cache-service-2 recovered and is now healthy
+2026-04-14 14:59:11.369 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:59:11.369 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:59:13.509 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:59:13.511 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:59:13.514 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:59:13.516 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:59:13.516 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:59:15.267 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:59:15.270 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:59:15.272 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:59:15.274 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:59:15.274 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:59:16.359 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:59:16.361 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:59:16.364 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:59:16.365 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:59:16.365 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:59:18.514 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:59:18.516 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:59:18.518 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:59:18.520 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:59:18.520 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:59:20.264 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:59:20.267 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:59:20.269 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:59:20.271 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:59:20.271 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:59:21.364 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:59:21.367 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:59:21.368 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:59:21.370 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:59:21.370 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:59:23.509 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:59:23.511 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:59:23.512 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:59:23.514 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:59:23.515 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:59:25.262 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:59:25.265 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:59:25.267 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:59:25.269 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:59:25.269 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:59:26.360 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:59:26.363 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:59:26.365 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:59:26.366 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:59:26.367 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:59:28.509 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:59:28.511 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:59:28.514 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:59:28.516 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:59:28.516 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:59:30.262 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:59:30.264 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:59:30.266 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:59:30.268 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:59:30.268 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:59:31.359 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:59:31.362 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:59:31.364 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9091, healthy: true
+2026-04-14 14:59:31.365 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:59:31.365 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 3/3
+2026-04-14 14:59:31.874 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Shutting down distributed cache server due to JVM shutdown
+2026-04-14 14:59:31.874 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Stopping distributed cache server...
+2026-04-14 14:59:31.874 [Thread-0] INFO  c.e4s.cache.discovery.HealthMonitor - Stopped HealthMonitor
+2026-04-14 14:59:31.880 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - gRPC server stopped
+2026-04-14 14:59:31.880 [Thread-0] INFO  c.e.c.d.DistributedChunkManager - Shutdown DistributedChunkManager
+2026-04-14 14:59:31.882 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9090
+2026-04-14 14:59:31.882 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9091
+2026-04-14 14:59:31.882 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9092
+2026-04-14 14:59:31.883 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Distributed cache server stopped
+2026-04-14 14:59:33.514 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:59:33.516 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9090, healthy: true
+2026-04-14 14:59:33.518 [health-monitor] ERROR c.e.c.discovery.CacheServiceClient - Failed health check for localhost:9091
+io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:59:33.518 [health-monitor] ERROR c.e.c.d.CacheServiceClientPool - Failed health check for service: cache-service-2
+java.lang.RuntimeException: Failed health check: UNAVAILABLE: io exception
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:80)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	... 10 common frames omitted
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:59:33.518 [health-monitor] WARN  c.e.cache.discovery.ServiceRegistry - Marked service as unhealthy: cache-service-2
+2026-04-14 14:59:33.518 [health-monitor] WARN  c.e4s.cache.discovery.HealthMonitor - Service cache-service-2 marked as unhealthy: Health check failed: Failed health check: UNAVAILABLE: io exception
+2026-04-14 14:59:33.521 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:59:33.521 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 2/3
+2026-04-14 14:59:35.419 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Shutting down distributed cache server due to JVM shutdown
+2026-04-14 14:59:35.420 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Stopping distributed cache server...
+2026-04-14 14:59:35.420 [Thread-0] INFO  c.e4s.cache.discovery.HealthMonitor - Stopped HealthMonitor
+2026-04-14 14:59:35.423 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - gRPC server stopped
+2026-04-14 14:59:35.423 [Thread-0] INFO  c.e.c.d.DistributedChunkManager - Shutdown DistributedChunkManager
+2026-04-14 14:59:35.424 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9090
+2026-04-14 14:59:35.424 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9091
+2026-04-14 14:59:35.425 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9092
+2026-04-14 14:59:35.426 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Distributed cache server stopped
+2026-04-14 14:59:36.360 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Performing health checks for 3 services
+2026-04-14 14:59:36.362 [health-monitor] ERROR c.e.c.discovery.CacheServiceClient - Failed health check for localhost:9090
+io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9090
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:59:36.362 [health-monitor] ERROR c.e.c.d.CacheServiceClientPool - Failed health check for service: cache-service-1
+java.lang.RuntimeException: Failed health check: UNAVAILABLE: io exception
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:80)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	... 10 common frames omitted
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9090
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:59:36.362 [health-monitor] WARN  c.e.cache.discovery.ServiceRegistry - Marked service as unhealthy: cache-service-1
+2026-04-14 14:59:36.362 [health-monitor] WARN  c.e4s.cache.discovery.HealthMonitor - Service cache-service-1 marked as unhealthy: Health check failed: Failed health check: UNAVAILABLE: io exception
+2026-04-14 14:59:36.363 [health-monitor] ERROR c.e.c.discovery.CacheServiceClient - Failed health check for localhost:9091
+io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:59:36.363 [health-monitor] ERROR c.e.c.d.CacheServiceClientPool - Failed health check for service: cache-service-2
+java.lang.RuntimeException: Failed health check: UNAVAILABLE: io exception
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:80)
+	at com.e4s.cache.discovery.CacheServiceClientPool.healthCheck(CacheServiceClientPool.java:96)
+	at com.e4s.cache.discovery.HealthMonitor.checkServiceHealth(HealthMonitor.java:90)
+	at com.e4s.cache.discovery.HealthMonitor.performHealthChecks(HealthMonitor.java:76)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.stub.ClientCalls.toStatusRuntimeException(ClientCalls.java:268)
+	at io.grpc.stub.ClientCalls.getUnchecked(ClientCalls.java:249)
+	at io.grpc.stub.ClientCalls.blockingUnaryCall(ClientCalls.java:167)
+	at com.e4s.cache.grpc.CacheServiceGrpc$CacheServiceBlockingStub.healthCheck(CacheServiceGrpc.java:266)
+	at com.e4s.cache.discovery.CacheServiceClient.healthCheck(CacheServiceClient.java:74)
+	... 10 common frames omitted
+Caused by: io.grpc.netty.shaded.io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9091
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.grpc.netty.shaded.io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.grpc.netty.shaded.io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.grpc.netty.shaded.io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.grpc.netty.shaded.io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.grpc.netty.shaded.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2026-04-14 14:59:36.364 [health-monitor] WARN  c.e.cache.discovery.ServiceRegistry - Marked service as unhealthy: cache-service-2
+2026-04-14 14:59:36.364 [health-monitor] WARN  c.e4s.cache.discovery.HealthMonitor - Service cache-service-2 marked as unhealthy: Health check failed: Failed health check: UNAVAILABLE: io exception
+2026-04-14 14:59:36.365 [health-monitor] DEBUG c.e.c.discovery.CacheServiceClient - healthCheck response for localhost:9092, healthy: true
+2026-04-14 14:59:36.365 [health-monitor] DEBUG c.e4s.cache.discovery.HealthMonitor - Health check completed. Healthy services: 1/3
+2026-04-14 14:59:37.488 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Shutting down distributed cache server due to JVM shutdown
+2026-04-14 14:59:37.488 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Stopping distributed cache server...
+2026-04-14 14:59:37.488 [Thread-0] INFO  c.e4s.cache.discovery.HealthMonitor - Stopped HealthMonitor
+2026-04-14 14:59:37.491 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - gRPC server stopped
+2026-04-14 14:59:37.492 [Thread-0] INFO  c.e.c.d.DistributedChunkManager - Shutdown DistributedChunkManager
+2026-04-14 14:59:37.492 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9090
+2026-04-14 14:59:37.492 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9091
+2026-04-14 14:59:37.493 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9092
+2026-04-14 14:59:37.493 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Distributed cache server stopped
+2026-04-14 15:04:00.135 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:04:00.139 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:04:00.140 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:04:00.140 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Added service service-4 to hash ring
+2026-04-14 15:04:00.140 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:04:00.141 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:04:00.141 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:04:00.141 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Removed service service-2 from hash ring
+2026-04-14 15:04:00.141 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:04:00.141 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Removed service service-2 from hash ring
+2026-04-14 15:04:00.142 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Rebuilt hash ring with 200 virtual nodes
+2026-04-14 15:04:00.142 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:04:00.142 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:04:00.143 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:04:00.145 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:04:00.146 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:04:00.146 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:04:00.147 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:04:00.147 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:04:00.147 [main] INFO  c.e.cache.discovery.ServiceRegistry - Unregistered service: service-1
+2026-04-14 15:04:00.147 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:04:00.147 [main] WARN  c.e.cache.discovery.ServiceRegistry - Marked service as unhealthy: service-1
+2026-04-14 15:04:00.147 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:04:00.147 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:04:00.147 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:04:00.148 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:04:00.148 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:04:00.148 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:04:00.148 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:04:00.148 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:04:00.148 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:04:00.148 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:04:00.148 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-2 in group: group-1
+2026-04-14 15:04:00.148 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-3 in group: group-2
+2026-04-14 15:04:00.148 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:04:00.149 [main] INFO  c.e.cache.discovery.ServiceRegistry - Marked service as healthy: service-1
+2026-04-14 15:04:00.149 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: service-1 in group: group-1
+2026-04-14 15:06:09.806 [main] INFO  com.e4s.cache.config.ConfigLoader - Loading configuration from: /Users/eric.w/Workspace/e4s/ai/open-code/e4s-cahce/config/cache-service-3.yaml
+2026-04-14 15:06:09.852 [main] INFO  com.e4s.cache.config.ConfigLoader - Configuration loaded successfully
+2026-04-14 15:06:09.912 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-3 in group: e4s-cache
+2026-04-14 15:06:09.913 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-1 in group: e4s-cache
+2026-04-14 15:06:09.913 [main] INFO  c.e.cache.discovery.ServiceRegistry - Registered service: cache-service-2 in group: e4s-cache
+2026-04-14 15:06:09.914 [main] INFO  c.e.c.d.ConsistentHashPartitioner - Created consistent hash ring with 300 virtual nodes for 3 services
+2026-04-14 15:06:10.011 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9090
+2026-04-14 15:06:10.011 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9091
+2026-04-14 15:06:10.012 [main] INFO  c.e.c.discovery.CacheServiceClient - Created CacheServiceClient for localhost:9092
+2026-04-14 15:06:10.012 [main] INFO  c.e.c.d.CacheServiceClientPool - Created client pool for 3 services
+2026-04-14 15:06:10.013 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Created HealthMonitor with check interval: 5000ms
+2026-04-14 15:06:10.013 [main] INFO  c.e.c.d.DistributedChunkManager - Created DistributedChunkManager for service: cache-service-3
+2026-04-14 15:06:10.014 [main] INFO  c.e.c.d.DistributedCacheServiceImpl - Created DistributedCacheServiceImpl for service: cache-service-3
+2026-04-14 15:06:10.036 [main] INFO  c.e.c.server.DistributedCacheServer - Created DistributedCacheServer: cache-service-3@localhost:9092 with 2 peer services
+2026-04-14 15:06:10.095 [main] INFO  c.e4s.cache.discovery.HealthMonitor - Started HealthMonitor
+2026-04-14 15:06:10.095 [main] INFO  c.e.c.server.DistributedCacheServer - Distributed Cache Server started, listening on port 9092
+2026-04-14 15:06:10.095 [main] INFO  c.e.c.server.DistributedCacheServer - Service ID: cache-service-3, Group: e4s-cache
+2026-04-14 15:06:10.096 [main] INFO  c.e.c.server.DistributedCacheServer - Total services: 3, Healthy services: 3
+2026-04-14 15:06:14.482 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Shutting down distributed cache server due to JVM shutdown
+2026-04-14 15:06:14.482 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Stopping distributed cache server...
+2026-04-14 15:06:14.482 [Thread-0] INFO  c.e4s.cache.discovery.HealthMonitor - Stopped HealthMonitor
+2026-04-14 15:06:14.485 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - gRPC server stopped
+2026-04-14 15:06:14.486 [Thread-0] INFO  c.e.c.d.DistributedChunkManager - Shutdown DistributedChunkManager
+2026-04-14 15:06:14.487 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9090
+2026-04-14 15:06:14.487 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9091
+2026-04-14 15:06:14.487 [Thread-0] INFO  c.e.c.discovery.CacheServiceClient - Shutdown CacheServiceClient for localhost:9092
+2026-04-14 15:06:14.488 [Thread-0] INFO  c.e.c.server.DistributedCacheServer - Distributed cache server stopped
